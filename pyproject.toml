@@ -4,4 +4,14 @@ version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "fastapi>=0.136.0",
+    "ipykernel>=7.2.0",
+    "litellm>=1.83.0",
+    "mlflow>=3.11.1",
+    "pandas>=2.3.3",
+    "pydantic>=2.13.3",
+    "pydantic-ai>=1.86.0",
+    "streamlit>=1.56.0",
+    "uvicorn>=0.46.0",
+]
