@@ -1,0 +1,602 @@
+{
+    "dataset_name": "Scandinavia Travel Dataset",
+    "version": "1.0",
+    "supported_cities": [
+        "Stockholm",
+        "Oslo",
+        "Copenhagen"
+    ],
+    "categories": [
+        "attraction",
+        "restaurant",
+        "activity"
+    ],
+    "cities": [
+        {
+            "city": "Stockholm",
+            "country": "Sweden",
+            "places": [
+                {
+                    "id": "stockholm_vasa_museum",
+                    "name": "Vasa Museum",
+                    "category": "attraction",
+                    "subcategories": [
+                        "museum",
+                        "history",
+                        "culture"
+                    ],
+                    "description": "A museum featuring the preserved 17th-century warship Vasa.",
+                    "budget_level": "medium",
+                    "family_friendly": true,
+                    "environment": "indoors",
+                    "travel_styles": [
+                        "family",
+                        "couple",
+                        "solo"
+                    ],
+                    "recommended_duration_hours": 2,
+                    "best_seasons": [
+                        "all_year"
+                    ],
+                    "area": "Djurgarden",
+                    "tags": [
+                        "museum",
+                        "historic",
+                        "popular"
+                    ],
+                    "priority_score": 3,
+                    "source_type": "manual"
+                },
+                {
+                    "id": "stockholm_gamla_stan",
+                    "name": "Gamla Stan",
+                    "category": "attraction",
+                    "subcategories": [
+                        "walking",
+                        "history",
+                        "sightseeing"
+                    ],
+                    "description": "Stockholm's old town with cobbled streets and historic architecture.",
+                    "budget_level": "low",
+                    "family_friendly": true,
+                    "environment": "outdoors",
+                    "travel_styles": [
+                        "solo",
+                        "couple",
+                        "family",
+                        "friends"
+                    ],
+                    "recommended_duration_hours": 2,
+                    "best_seasons": [
+                        "all_year"
+                    ],
+                    "area": "Gamla Stan",
+                    "tags": [
+                        "old town",
+                        "historic",
+                        "central"
+                    ],
+                    "priority_score": 3,
+                    "source_type": "manual"
+                },
+                {
+                    "id": "stockholm_skansen",
+                    "name": "Skansen",
+                    "category": "activity",
+                    "subcategories": [
+                        "zoo",
+                        "culture",
+                        "outdoor museum"
+                    ],
+                    "description": "Open-air museum and zoo with Swedish heritage exhibits.",
+                    "budget_level": "medium",
+                    "family_friendly": true,
+                    "environment": "outdoors",
+                    "travel_styles": [
+                        "family",
+                        "friends",
+                        "couple"
+                    ],
+                    "recommended_duration_hours": 3,
+                    "best_seasons": [
+                        "all_year"
+                    ],
+                    "area": "Djurgarden",
+                    "tags": [
+                        "animals",
+                        "heritage",
+                        "family"
+                    ],
+                    "priority_score": 3,
+                    "source_type": "manual"
+                },
+                {
+                    "id": "stockholm_fotografiska",
+                    "name": "Fotografiska",
+                    "category": "attraction",
+                    "subcategories": [
+                        "museum",
+                        "art",
+                        "photography"
+                    ],
+                    "description": "Contemporary photography museum with rotating exhibitions.",
+                    "budget_level": "medium",
+                    "family_friendly": false,
+                    "environment": "indoors",
+                    "travel_styles": [
+                        "solo",
+                        "couple",
+                        "friends"
+                    ],
+                    "recommended_duration_hours": 2,
+                    "best_seasons": [
+                        "all_year"
+                    ],
+                    "area": "Sodermalm",
+                    "tags": [
+                        "art",
+                        "photo",
+                        "modern"
+                    ],
+                    "priority_score": 2,
+                    "source_type": "manual"
+                },
+                {
+                    "id": "stockholm_food_hall",
+                    "name": "City Food Hall",
+                    "category": "restaurant",
+                    "subcategories": [
+                        "food",
+                        "market",
+                        "casual dining"
+                    ],
+                    "description": "Food hall with several vendors and budget-friendly options.",
+                    "budget_level": "low",
+                    "family_friendly": true,
+                    "environment": "indoors",
+                    "travel_styles": [
+                        "solo",
+                        "friends",
+                        "family"
+                    ],
+                    "recommended_duration_hours": 1,
+                    "best_seasons": [
+                        "all_year"
+                    ],
+                    "area": "City Center",
+                    "tags": [
+                        "market",
+                        "budget",
+                        "variety"
+                    ],
+                    "priority_score": 2,
+                    "source_type": "manual"
+                },
+                {
+                    "id": "stockholm_waterfront_dining",
+                    "name": "Waterfront Dining",
+                    "category": "restaurant",
+                    "subcategories": [
+                        "food",
+                        "fine dining",
+                        "romantic"
+                    ],
+                    "description": "Upscale dining experience with views over the water.",
+                    "budget_level": "high",
+                    "family_friendly": false,
+                    "environment": "indoors",
+                    "travel_styles": [
+                        "couple",
+                        "friends"
+                    ],
+                    "recommended_duration_hours": 2,
+                    "best_seasons": [
+                        "all_year"
+                    ],
+                    "area": "Norrmalm",
+                    "tags": [
+                        "fine dining",
+                        "views",
+                        "romantic"
+                    ],
+                    "priority_score": 2,
+                    "source_type": "manual"
+                }
+            ]
+        },
+        {
+            "city": "Oslo",
+            "country": "Norway",
+            "places": [
+                {
+                    "id": "oslo_vigeland_park",
+                    "name": "Vigeland Park",
+                    "category": "attraction",
+                    "subcategories": [
+                        "park",
+                        "sculpture",
+                        "walking"
+                    ],
+                    "description": "Large sculpture park with hundreds of works by Gustav Vigeland.",
+                    "budget_level": "low",
+                    "family_friendly": true,
+                    "environment": "outdoors",
+                    "travel_styles": [
+                        "solo",
+                        "couple",
+                        "family",
+                        "friends"
+                    ],
+                    "recommended_duration_hours": 2,
+                    "best_seasons": [
+                        "all_year"
+                    ],
+                    "area": "Frogner",
+                    "tags": [
+                        "park",
+                        "art",
+                        "walk"
+                    ],
+                    "priority_score": 3,
+                    "source_type": "manual"
+                },
+                {
+                    "id": "oslo_munch_museum",
+                    "name": "MUNCH",
+                    "category": "attraction",
+                    "subcategories": [
+                        "museum",
+                        "art",
+                        "culture"
+                    ],
+                    "description": "Museum focused on Edvard Munch and modern art exhibitions.",
+                    "budget_level": "medium",
+                    "family_friendly": false,
+                    "environment": "indoors",
+                    "travel_styles": [
+                        "solo",
+                        "couple",
+                        "friends"
+                    ],
+                    "recommended_duration_hours": 2,
+                    "best_seasons": [
+                        "all_year"
+                    ],
+                    "area": "Bjorvika",
+                    "tags": [
+                        "art",
+                        "museum",
+                        "culture"
+                    ],
+                    "priority_score": 3,
+                    "source_type": "manual"
+                },
+                {
+                    "id": "oslo_opera_house",
+                    "name": "Oslo Opera House",
+                    "category": "attraction",
+                    "subcategories": [
+                        "architecture",
+                        "culture",
+                        "walking"
+                    ],
+                    "description": "Modern waterfront opera house where visitors can walk on the roof.",
+                    "budget_level": "low",
+                    "family_friendly": true,
+                    "environment": "mixed",
+                    "travel_styles": [
+                        "couple",
+                        "solo",
+                        "friends",
+                        "family"
+                    ],
+                    "recommended_duration_hours": 1.5,
+                    "best_seasons": [
+                        "all_year"
+                    ],
+                    "area": "Bjorvika",
+                    "tags": [
+                        "architecture",
+                        "views",
+                        "landmark"
+                    ],
+                    "priority_score": 3,
+                    "source_type": "manual"
+                },
+                {
+                    "id": "oslo_fjord_cruise",
+                    "name": "Oslo Fjord Cruise",
+                    "category": "activity",
+                    "subcategories": [
+                        "boat tour",
+                        "nature",
+                        "sightseeing"
+                    ],
+                    "description": "Boat sightseeing tour through the Oslofjord.",
+                    "budget_level": "high",
+                    "family_friendly": true,
+                    "environment": "outdoors",
+                    "travel_styles": [
+                        "couple",
+                        "friends",
+                        "family"
+                    ],
+                    "recommended_duration_hours": 2,
+                    "best_seasons": [
+                        "spring",
+                        "summer",
+                        "autumn"
+                    ],
+                    "area": "Oslo Harbor",
+                    "tags": [
+                        "fjord",
+                        "boat",
+                        "views"
+                    ],
+                    "priority_score": 3,
+                    "source_type": "manual"
+                },
+                {
+                    "id": "oslo_mathallen",
+                    "name": "Mathallen Food Hall",
+                    "category": "restaurant",
+                    "subcategories": [
+                        "food",
+                        "market",
+                        "casual dining"
+                    ],
+                    "description": "Indoor food hall with many stalls and varied cuisine.",
+                    "budget_level": "medium",
+                    "family_friendly": true,
+                    "environment": "indoors",
+                    "travel_styles": [
+                        "friends",
+                        "family",
+                        "solo"
+                    ],
+                    "recommended_duration_hours": 1.5,
+                    "best_seasons": [
+                        "all_year"
+                    ],
+                    "area": "Grunerlokka",
+                    "tags": [
+                        "food hall",
+                        "variety",
+                        "casual"
+                    ],
+                    "priority_score": 2,
+                    "source_type": "manual"
+                },
+                {
+                    "id": "oslo_budget_noodle_bar",
+                    "name": "Budget Noodle Bar",
+                    "category": "restaurant",
+                    "subcategories": [
+                        "food",
+                        "casual dining",
+                        "budget"
+                    ],
+                    "description": "Student-friendly quick dining option in central Oslo.",
+                    "budget_level": "low",
+                    "family_friendly": true,
+                    "environment": "indoors",
+                    "travel_styles": [
+                        "solo",
+                        "friends",
+                        "family"
+                    ],
+                    "recommended_duration_hours": 1,
+                    "best_seasons": [
+                        "all_year"
+                    ],
+                    "area": "City Center",
+                    "tags": [
+                        "budget",
+                        "quick meal",
+                        "central"
+                    ],
+                    "priority_score": 2,
+                    "source_type": "manual"
+                }
+            ]
+        },
+        {
+            "city": "Copenhagen",
+            "country": "Denmark",
+            "places": [
+                {
+                    "id": "copenhagen_nyhavn",
+                    "name": "Nyhavn",
+                    "category": "attraction",
+                    "subcategories": [
+                        "sightseeing",
+                        "walking",
+                        "waterfront"
+                    ],
+                    "description": "Historic harbor district with colorful buildings, cafes, and boats.",
+                    "budget_level": "low",
+                    "family_friendly": true,
+                    "environment": "outdoors",
+                    "travel_styles": [
+                        "solo",
+                        "couple",
+                        "family",
+                        "friends"
+                    ],
+                    "recommended_duration_hours": 1.5,
+                    "best_seasons": [
+                        "all_year"
+                    ],
+                    "area": "Nyhavn",
+                    "tags": [
+                        "harbor",
+                        "colorful",
+                        "iconic"
+                    ],
+                    "priority_score": 3,
+                    "source_type": "manual"
+                },
+                {
+                    "id": "copenhagen_tivoli",
+                    "name": "Tivoli Gardens",
+                    "category": "activity",
+                    "subcategories": [
+                        "amusement park",
+                        "entertainment",
+                        "gardens"
+                    ],
+                    "description": "Historic amusement park in central Copenhagen.",
+                    "budget_level": "high",
+                    "family_friendly": true,
+                    "environment": "mixed",
+                    "travel_styles": [
+                        "family",
+                        "couple",
+                        "friends"
+                    ],
+                    "recommended_duration_hours": 4,
+                    "best_seasons": [
+                        "spring",
+                        "summer",
+                        "autumn",
+                        "winter"
+                    ],
+                    "area": "City Center",
+                    "tags": [
+                        "rides",
+                        "gardens",
+                        "iconic"
+                    ],
+                    "priority_score": 3,
+                    "source_type": "manual"
+                },
+                {
+                    "id": "copenhagen_national_museum",
+                    "name": "National Museum of Denmark",
+                    "category": "attraction",
+                    "subcategories": [
+                        "museum",
+                        "history",
+                        "culture"
+                    ],
+                    "description": "Major museum covering Danish history and culture.",
+                    "budget_level": "medium",
+                    "family_friendly": true,
+                    "environment": "indoors",
+                    "travel_styles": [
+                        "family",
+                        "solo",
+                        "couple"
+                    ],
+                    "recommended_duration_hours": 2.5,
+                    "best_seasons": [
+                        "all_year"
+                    ],
+                    "area": "Inner City",
+                    "tags": [
+                        "history",
+                        "culture",
+                        "museum"
+                    ],
+                    "priority_score": 2,
+                    "source_type": "manual"
+                },
+                {
+                    "id": "copenhagen_little_mermaid",
+                    "name": "The Little Mermaid",
+                    "category": "attraction",
+                    "subcategories": [
+                        "landmark",
+                        "walking",
+                        "sightseeing"
+                    ],
+                    "description": "Famous waterfront statue and one of Copenhagen's best-known landmarks.",
+                    "budget_level": "low",
+                    "family_friendly": true,
+                    "environment": "outdoors",
+                    "travel_styles": [
+                        "solo",
+                        "couple",
+                        "family",
+                        "friends"
+                    ],
+                    "recommended_duration_hours": 1,
+                    "best_seasons": [
+                        "all_year"
+                    ],
+                    "area": "Langelinie",
+                    "tags": [
+                        "landmark",
+                        "statue",
+                        "waterfront"
+                    ],
+                    "priority_score": 2,
+                    "source_type": "manual"
+                },
+                {
+                    "id": "copenhagen_street_food",
+                    "name": "Street Food Market",
+                    "category": "restaurant",
+                    "subcategories": [
+                        "food",
+                        "market",
+                        "casual dining"
+                    ],
+                    "description": "Lively food market with a range of international and local dishes.",
+                    "budget_level": "low",
+                    "family_friendly": true,
+                    "environment": "mixed",
+                    "travel_styles": [
+                        "friends",
+                        "family",
+                        "solo"
+                    ],
+                    "recommended_duration_hours": 1.5,
+                    "best_seasons": [
+                        "all_year"
+                    ],
+                    "area": "Refshaleoen",
+                    "tags": [
+                        "budget",
+                        "food market",
+                        "variety"
+                    ],
+                    "priority_score": 3,
+                    "source_type": "manual"
+                },
+                {
+                    "id": "copenhagen_cozy_cafe",
+                    "name": "Cozy Danish Cafe",
+                    "category": "restaurant",
+                    "subcategories": [
+                        "food",
+                        "cafe",
+                        "brunch"
+                    ],
+                    "description": "Relaxed cafe serving coffee, pastries, and brunch dishes.",
+                    "budget_level": "medium",
+                    "family_friendly": true,
+                    "environment": "indoors",
+                    "travel_styles": [
+                        "solo",
+                        "couple",
+                        "friends",
+                        "family"
+                    ],
+                    "recommended_duration_hours": 1,
+                    "best_seasons": [
+                        "all_year"
+                    ],
+                    "area": "Vesterbro",
+                    "tags": [
+                        "cafe",
+                        "hygge",
+                        "brunch"
+                    ],
+                    "priority_score": 2,
+                    "source_type": "manual"
+                }
+            ]
+        }
+    ]
+}
