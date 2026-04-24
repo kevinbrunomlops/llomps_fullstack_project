@@ -1,10 +1,6 @@
 # Working Agreement
 ## Travel Chatbot in Scandinavia
 
-<<<<<<< HEAD
-Fill in your way of working here 
-
-=======
 ## Team Goals
 - Build a working full-stack AI travel chatbot
 - Deliver on time
@@ -57,4 +53,3 @@ All members help with testing, documentation, and presentation.
 
 ## Agreement
 We agree to work professionally, respectfully, and contribute fairly.
->>>>>>> 439b5d1f516672501c384abcabda189b1ec2763b
