@@ -1,8 +1,3 @@
-
-
-
-
-
 from fastapi import APIRouter, HTTPException
 
 from app.schemas.recommendations import RecommendationRequest, RecommendationResponse
