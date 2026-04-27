@@ -11,6 +11,35 @@ from app.schemas.recommendations import RecommendationRequest, RecommendationRes
 from app.services.content_service import filter_place, get_supported_cities
 from app.service.google_map_service import google_maps_service
 
+
+
+
+
+
+
+async def _category_places(request: RecommendationRequest, category: str) -> list[Place]:
+    seed_places = filter_places(
+        city=request.city,
+        category=category,
+        interests=request.interests,
+        budget=request.budget,
+        family_friendly=request.family_friendly,
+        environment=request.environment,
+        indoors=request.indoors,
+        travel_group=request.travel_group,
+    )
+
+    live_place: list[Place] = []
+    if request.use_google_maps:
+        interest_text = " ".join(request.interests) if request.interests else category
+        text_query = f"{interest_text} {category} in {request.city}"
+        live_place = await google_maps_service.text_search(
+            text_query=text_query,
+            category=category,
+            city=request.city,
+        )
+    return _merge_unique(seed_places, live_place=live_place)[:5]
+
 async def build_recommendations(request: RecommendationRequest) -> RecommendationResponse:
     attractions = await _category_places(request, "attraction")
     restaurants = await _category_places(request, "restaurant")
