@@ -31,25 +31,25 @@ def load_dataset() -> dict[str, Any]:
         return json.load(file)
     
 
-    @lru_cache
-    def load_places() -> list[Place]:
-        dataset = load_dataset()
-        places: list[Place] = []
+@lru_cache
+def load_places() -> list[Place]:
+    dataset = load_dataset()
+    places: list[Place] = []
 
-        for city_block in dataset.get("cities",[]):
-            city = city_block.get("city")
-            country = city_block.get("country")
+    for city_block in dataset.get("cities",[]):
+        city = city_block.get("city")
+        country = city_block.get("country")
 
-            for raw_place in city_block.get("places",[]):
-                places.append(
-                    Place(
-                        **raw_place,
-                        city=city,
-                        county=country
-                    )
+        for raw_place in city_block.get("places",[]):
+            places.append(
+                Place(
+                    **raw_place,
+                    city=city,
+                    county=country
                 )
-        
-        return places
+            )
+    
+    return places
     
     
 @lru_cache
@@ -76,14 +76,14 @@ def _matches_interests(place: Place, interests: list[str] | None) -> bool:
         place.name,
         place.category,
         place.description or "",
-        place.ares or "",
+        place.area or "",
         *(place.subcategories or []),
         *(place.tags or []),
         *(place.travel_styles or []),
     ]     
     searchable_text = " ".join(searchable_values).lower()
 
-    return any(_nomralize(interest) in search_text for interest in interests)
+    return any(_normalize(interest) in searchable_text for interest in interests)
 
 
 def filter_places(
@@ -93,7 +93,7 @@ def filter_places(
         interests: list[str] | None = None,
         budget: str | None = None,
         family_friendly: bool | None = None,
-        environment:str | None = None,
+        environment: str | None = None,
         indoors: bool | None = None,
         travel_group: str | None
 ) -> list[Place]:
@@ -142,7 +142,7 @@ def filter_places(
 
         return sorted(
             matches,
-            key=lambda item: (item.priority_score or 0, item. recommended_durattion_hours or O),
+            key=lambda item: (item.priority_score or 0, item. recommended_durattion_hours or 0),
             reverse=True,
         )
 
@@ -154,14 +154,14 @@ def format_places_for_prompt(places: list[Place]) -> str:
     rows: list[str]= []
     for place in places:
         rows.append(
-            "="
+            "- "
             f"{place.name} | city={place.city} | country={place.country or 'unknown'} |"            
-            f"category{place.category} | subcategories={', '.join(place.subcategories) or 'n/a'} |"
-            f"budget{place.budget_level or place.price_level or 'unknow'} |"
-            f"family_friendly{place.family_friendly} | environment={place.environement or 'unknow'}|"
-            f"area{place.area or place.address or 'unknown'} |"
-            f"duration_hours={place.recommended_duration_hours or 'n/a'}  |"
-            f"tags{', '.join(place.tags) or 'n/a'} |"
+            f"category{place.category} | subcategories={', '.join(place.subcategories) or 'n/a'} | "
+            f"budget{place.budget_level or place.price_level or 'unknow'} | "
+            f"family_friendly{place.family_friendly} | environment={place.environement or 'unknow'}| "
+            f"area{place.area or place.address or 'unknown'} | "
+            f"duration_hours={place.recommended_duration_hours or 'n/a'}  | "
+            f"tags{', '.join(place.tags) or 'n/a'} | "
             f"source={place.source_type} | description={place.description or 'n/a'}"
         )
     return "\n".join(rows)
