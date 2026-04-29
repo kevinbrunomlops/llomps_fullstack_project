@@ -8,11 +8,12 @@ class RecommendationRequest(BaseModel):
     budget: str | None = None #low, medium, high
     interests: list[str] = Field(default_factory=list)
     travel_group: str | None = None # solo, couple, family, friends
-    family_friendly: bool | None = None #indoors, outdoors, mixed
+    family_friendly: bool | None = None 
+    environment: str | None = None #indoors, outdoors, mixed
     indoors: bool | None = None # kept for backward compatibility
     use_google_maps: bool = False
 
-class RecommendationRequest(BaseModel):
+class RecommendationResponse(BaseModel):
     city: str
     attractions: list[Place] = Field(default_factory=list)
     restaurants: list[Place] = Field(default_factory=list)
