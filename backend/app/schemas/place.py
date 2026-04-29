@@ -29,8 +29,7 @@ class Place(BaseModel):
     address: str | None = None
     rating: float | None = None
     price_level: str | None = None
-    family_friendly: bool | None = None
-    address: str | None = None
+    opening_hours: list[str] = Field(default_factory=list)
 
 @property
 def source(self) -> str:
