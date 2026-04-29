@@ -19,7 +19,7 @@ def register_travel_prompts() -> None:
             "author": "team",
             "agent": "travel-chatbot",
             "prompt_type": "system_prompt",
-            "version": "v1",
+            
         },
     )
 
@@ -34,7 +34,7 @@ def register_travel_prompts() -> None:
             "agent": "travel-chatbot",
             "prompt_type": "tool_description",
             "tool_name": "lookup_seed_places",
-            "version": "v1",
+            
         },
     )
 
@@ -49,7 +49,7 @@ def register_travel_prompts() -> None:
             "agent": "travel-chatbot",
             "prompt_type": "tool_description",
             "tool_name": "google_maps_search",
-            "version": "v1",
+            
         },
     )
 
