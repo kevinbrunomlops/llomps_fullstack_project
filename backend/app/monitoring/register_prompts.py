@@ -38,4 +38,23 @@ def register_travel_prompts() -> None:
         },
     )
 
-    register_prompt
+    register_prompt(
+        name="travel_google_maps_lookup_description",
+        template=(
+            "Use live Google Maos data carefully for real places. "
+            "Prefer a small number of results and avoid claiming unavailable details."
+        ),
+        tags={
+            "author": "team",
+            "agent": "travel-chatbot",
+            "prompt_type": "tool_description",
+            "tool_name": "google_maps_search",
+            "version": "v1",
+        },
+    )
+
+if __name__ == "__main__":
+    register_travel_prompts()
+    print("Travel prompts registred in MLFlow.") 
+
+    
