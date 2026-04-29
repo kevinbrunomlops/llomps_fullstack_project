@@ -8,7 +8,7 @@ def test_load_places():
 
 
 def test_filer_stockholm_attraction():
-    places = filter_places(city="Stockholm", category="attration")
+    places = filter_places(city="Stockholm", category="attraction")
     assert places
     assert all(place.city == "Stockholm" for place in places)
     assert all(place.category == "attraction" for place in places)
