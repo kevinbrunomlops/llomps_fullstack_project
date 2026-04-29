@@ -13,7 +13,7 @@ class ChatRequest(BaseModel):
     environment: str | None = None # indoors, outdoors, mixed
     indoors: bool | None = None
     use_google_maps: bool = False
-    prompt_version: str 
+    prompt_version: str | None = None
 
 class ChatResponse(BaseModel):
     answer: str
