@@ -40,16 +40,16 @@ async def _category_places(
         travel_group=request.travel_group,
     )
 
-    live_place: list[Place] = []
+    live_places: list[Place] = []
     if request.use_google_maps:
         interest_text = " ".join(request.interests) if request.interests else category
         text_query = f"{interest_text} {category} in {request.city}"
-        live_place = await google_maps_service.text_search(
+        live_places = await google_maps_service.text_search(
             text_query=text_query,
             category=category,
             city=request.city,
         )
-    return _merge_unique(seed_places, live_place=live_place)[:5]
+    return _merge_unique(seed_places, live_places=live_places)[:5]
 
 
 async def build_recommendations(
