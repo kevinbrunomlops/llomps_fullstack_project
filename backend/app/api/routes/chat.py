@@ -9,7 +9,7 @@ router = APIRouter()
 @router.post("",response_model=ChatResponse)
 async def chat(request: ChatRequest) -> ChatResponse:
     try:
-        return await run_travel_agent(request)
-    except Exception as exc: # pragma no cover - thin API layer
+        return await run_travel_agent(request)        
+    except Exception as exc: # pragma:no cover - this API layer
         raise HTTPException(status_code=500, detail=str(exc)) from exc
 

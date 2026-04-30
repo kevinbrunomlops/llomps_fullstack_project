@@ -1,24 +1,18 @@
 from fastapi import FastAPI
-#from app.routes import chat
 
-app = FastAPI()
+from app.api.routes import chat, health, recommendations
 
-#app.include_router(chat.router)
+app = FastAPI(title="Travel Chabot API")
+
+# include routers
+app.include_router(chat.router, prefix="/chat", tags=["Chat"])
+app.include_router(health.router, tags=["Health"])
+app.include_router(recommendations.router, prefix="/recommendations", tags=["Recommendations"])
+
 
 @app.get("/")
 def root():
     return {"message": "API running"}
 
 
-@app.post("/chat")
-def chat():
-    return {"answer": "Hello from your backend"}
-
-@app.post("/health")
-def process():
-    return {"answer": "Backend says gets working API ok"}
-
-@app.post("/recommendation")
-def process():
-    return {"answer": "Backend says respond and request"}
 
