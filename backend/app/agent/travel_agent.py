@@ -25,7 +25,7 @@ load_dotenv()
 
 travel_agent = Agent(
     model=MODEL_MEDIUM,
-    system_prompt=load_prompt("travel_chatbot_system_prompt").format(),
+    system_prompt=load_prompt("travel_chatbot_system_prompt").template
 )
 
 @travel_agent.tool_plain
@@ -93,7 +93,7 @@ Candidate attractions:
 Candidate restaurants:
 {format_places_for_prompt(recommendations.restaurants)}
 
-Candidate activitites:
+Candidate activities:
 {format_places_for_prompt(recommendations.activities)}
 
 Simple draft day plan:
@@ -104,7 +104,7 @@ Instructions:
 - Use only the candidate places above unless you clearly say that you are giving a general suggestion. 
 - Keep the tone helpful and practical.
 - Use headings for Sevärdheter, Restauranger, Aktiviteter and Enkel dagsplan. 
-- Respect budget, travel group, family-friendly and environent filters when they are provided.
+- Respect budget, travel group, family-friendly and environment filters when they are provided.
 - Mention whether the recommendations come from the manual dataset or Google Maps if relevant. 
 - End with 2 short follow-up questions.
 """
@@ -120,7 +120,7 @@ Instructions:
     all_places = [
         *recommendations.attractions,
         *recommendations.restaurants,
-        *recommendations.activitites,
+        *recommendations.activities,
     ]
     sources = sorted({place.source_type for place in all_places})
 
@@ -129,9 +129,9 @@ Instructions:
         city=recommendation_request.city,
         prompt_name="travel_chatbot_system_prompt",
         prompt_version=request.prompt_version, 
-        attractions=[place.model_dumpt() for place in recommendations.attractions],
-        restaurants=[place.model_dumpt() for place in recommendations.restaurants],
-        activities=[place.model_dumpt() for place in recommendations.activities],
+        attractions=[place.model_dump() for place in recommendations.attractions],
+        restaurants=[place.model_dump() for place in recommendations.restaurants],
+        activities=[place.model_dump() for place in recommendations.activities],
         follow_up_questions=[
             "Vill du att jag gör ett billigare upplägg?",
             "Vill du att jag fokuserar mer på mat, kultur eller natur?"
