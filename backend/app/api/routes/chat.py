@@ -1,6 +1,6 @@
 from fastapi import APIRouter, HTTPException
 
-from app.agents.travel_agent import run_travel_agent
+from app.agent.travel_agent import run_travel_agent
 from app.schemas.chat import ChatRequest, ChatResponse
 
 router = APIRouter()
