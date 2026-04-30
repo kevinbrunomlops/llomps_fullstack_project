@@ -13,3 +13,7 @@ def root():
 @app.post("/chat")
 def chat():
     return {"answer": "Hello from your backend"}
+
+@app.post("/process")
+def process():
+    return {"answer": "Backend says get started with process"}
