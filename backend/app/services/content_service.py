@@ -45,7 +45,7 @@ def load_places() -> list[Place]:
                 Place(
                     **raw_place,
                     city=city,
-                    county=country
+                    country=country
                 )
             )
     
@@ -55,7 +55,7 @@ def load_places() -> list[Place]:
 @lru_cache
 def get_supported_cities() -> list[str]:
     dataset = load_dataset()
-    return dataset.get("suppported_cities", [])
+    return dataset.get("supported_cities", [])
 
 
 @lru_cache
@@ -125,7 +125,7 @@ def filter_places(
 
         if environment:
             requested_environment = _normalize(environment)
-            place_environment = _normalize(place.environement)
+            place_environment = _normalize(place.environment)
             # "mixed" can work for both indoors and outdoors requests.
             if place_environment not in {requested_environment, "mixed"}:
                 continue
@@ -140,9 +140,9 @@ def filter_places(
 
         matches.append(place)
 
-        return sorted(
+    return sorted(
             matches,
-            key=lambda item: (item.priority_score or 0, item. recommended_durattion_hours or 0),
+            key=lambda item: (item.priority_score or 0, item.recommended_duration_hours or 0),
             reverse=True,
         )
 
