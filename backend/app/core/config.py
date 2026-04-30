@@ -29,7 +29,7 @@ class Settings(BaseSettings):
 
     @property
     def project_root(self) -> Path:
-        return Path(__file__).resolve.parents[2]
+        return Path(__file__).resolve().parents[2]
     
     @property
     def monitoring_path(self) -> Path:
