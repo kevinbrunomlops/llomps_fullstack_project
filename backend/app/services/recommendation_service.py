@@ -12,11 +12,14 @@ from app.services.content_service import filter_places, get_supported_cities
 from app.services.google_maps_service import google_maps_service
 
 
-def _merge_unique(seed_places: list[Place], live_places: list[Place]) -> list[Place]:
+def _merge_unique(
+    seed_places: list[Place] | None,
+    live_places: list[Place] | None,
+) -> list[Place]:
     seen: set[tuple[str, str]] = set()
     combined: list[Place] = []
 
-    for place in [*seed_places, *live_places]:
+    for place in [*(seed_places or []), *(live_places or [])]:
         key = (place.name.lower(), place.city.lower())
         if key in seen:
             continue
