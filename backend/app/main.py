@@ -14,6 +14,11 @@ def root():
 def chat():
     return {"answer": "Hello from your backend"}
 
-@app.post("/process")
+@app.post("/health")
 def process():
-    return {"answer": "Backend says get started with process"}
+    return {"answer": "Backend says gets working API ok"}
+
+@app.post("/recommendation")
+def process():
+    return {"answer": "Backend says respond and request"}
+
