@@ -9,7 +9,7 @@ from __future__ import annotations
 from app.schemas.place import Place
 from app.schemas.recommendations import RecommendationRequest, RecommendationResponse
 from app.services.content_service import filter_places, get_supported_cities
-from app.service.google_map_service import google_maps_service
+from app.services.google_maps_service import google_maps_service
 
 
 def _merge_unique(seed_places: list[Place], live_places: list[Place]) -> list[Place]:
