@@ -133,8 +133,8 @@ Instructions:
         restaurants=[place.model_dump() for place in recommendations.restaurants],
         activities=[place.model_dump() for place in recommendations.activities],
         follow_up_questions=[
-            "Vill du att jag gör ett billigare upplägg?",
-            "Vill du att jag fokuserar mer på mat, kultur eller natur?"
+            {"quesiton": "Vill du att jag gör ett billigare upplägg?"},
+            {"question": "Vill du att jag fokuserar mer på mat, kultur eller natur?"},
         ],
         sources=sources,
     )
