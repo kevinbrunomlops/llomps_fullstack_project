@@ -5,7 +5,16 @@ from services.mock_llm import generate_mock_response
 def render_chat_interface():
     st.subheader("Travel chat")
 
-    for message in st.session_state.messages:
+    city = st.session_state.get("city")
+    days = st.session_state.get("days")
+    budget = st.session_state.get("budget")
+    messages = st.session_state.get("messages", [])
+
+    if not city or not days or not budget:
+        st.warning("Please start by entering your trip details.")
+        return
+
+    for message in messages:
         with st.chat_message(message["role"]):
             st.write(message["content"])
 
@@ -22,9 +31,9 @@ def render_chat_interface():
 
         response = generate_mock_response(
             user_message=user_message,
-            city=st.session_state.city,
-            days=st.session_state.days,
-            budget=st.session_state.budget
+            city=city,
+            days=days,
+            budget=budget
         )
 
         st.session_state.messages.append({

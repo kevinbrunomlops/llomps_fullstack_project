@@ -53,7 +53,8 @@ else:
         )
 
         if st.button("Start over"):
-            st.session_state.clear()
+            for key in ["chat_started", "messages", "country", "city", "days", "budget"]:
+                st.session_state.pop(key, None)
             st.rerun()
 
     with col2:
