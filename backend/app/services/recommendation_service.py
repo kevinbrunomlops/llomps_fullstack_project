@@ -8,7 +8,7 @@ from __future__ import annotations
 
 from app.schemas.place import Place
 from app.schemas.recommendations import RecommendationRequest, RecommendationResponse
-from app.services.content_service import filter_places, get_supported_cities
+from app.services.content_service import rank_places, get_supported_cities
 from app.services.google_maps_service import google_maps_service
 
 
@@ -32,7 +32,7 @@ def _merge_unique(
 async def _category_places(
     request: RecommendationRequest, category: str
 ) -> list[Place]:
-    seed_places = filter_places(
+    seed_places = rank_places(
         city=request.city,
         category=category,
         interests=request.interests,

@@ -86,6 +86,60 @@ def _matches_interests(place: Place, interests: list[str] | None) -> bool:
     return any(_normalize(interest) in searchable_text for interest in interests)
 
 
+
+
+def rank_places(
+        *,
+        city: str | None = None,
+        category: str | None = None,
+        interests: list[str] | None = None,
+        budget: str | None = None,
+        family_friendly: bool | None = None,
+        environment: str | None = None,
+        indoors: bool | None = None,
+        travel_group: str | None = None,
+        limit: int = 5,
+) -> list[Place]:
+    """ 
+    Rank places by best possible match.
+    
+    City and category are strict filters.
+    Interests, budget, family_friendly, environment and travel_group are soft ranking signals.
+    """
+    if environment is None and indoors is not None:
+        environment = "indoors" if indoors else "outdoors"
+    
+    scored_places: list[tuple[int, Place]] = []
+
+    for place in load_places():
+        if city and _normalize(place.city) != _normalize(city):
+            continue
+
+        if category and _normalize(place.category) != _normalize(city):
+            continue
+
+        score = _score_place(
+            place,
+            interests=interests,
+            budget=budget,
+            family_friendly=family_friendly,
+            environment=environment,
+            travel_group=travel_group,
+        )
+
+        scored_places.append((score, place))
+    
+    scored_places.sort(
+        key=lambda item: (
+            item[0],
+            item[1].priority_score or 0,
+            item[1].recommended_duration_hours or 0,
+        ),
+        reverse=True,
+    )
+
+    return [place for _, place in scored_places[:limit]]
+
 def filter_places(
         *,
         city: str | None = None,
@@ -95,7 +149,7 @@ def filter_places(
         family_friendly: bool | None = None,
         environment: str | None = None,
         indoors: bool | None = None,
-        travel_group: str | None
+        travel_group: str | None = None, 
 ) -> list[Place]:
     """
     Filter manual dataset places.
