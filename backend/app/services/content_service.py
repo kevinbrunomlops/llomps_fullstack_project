@@ -86,6 +86,50 @@ def _matches_interests(place: Place, interests: list[str] | None) -> bool:
     return any(_normalize(interest) in searchable_text for interest in interests)
 
 
+def _score_place(
+    place:Place,
+    *,
+    interests:list[str] | None=None,
+    budget:str | None = None,
+    family_friendly:bool | None=None,
+    environment:str | None=None,
+    travel_group:str | None=None,   
+)-> int:
+  score= place.priority_score or 0
+
+  if interests and _matches_interests(place, interests):
+      score += 30
+
+  if budget and _normalize(place.budget_level)==_normalize(budget):
+      score += 20
+ 
+  if environment:
+      requested_environment=_normalize(environment)
+      place_environment=_normalize(place.environment)
+
+  if place_environment==requested_environment:
+      score += 15
+  elif place_environment=="mixed":
+      score +=8
+
+  if travel_group and _normalize(travel_group) in {_normalize(style) for style in place.travel_styles
+  }:
+      score += 10
+
+  if family_friendly is not None and place.family_friendly== family_friendly:
+      score += 10
+
+  return score
+      
+
+
+ 
+
+
+
+
+
+
 def filter_places(
         *,
         city: str | None = None,
