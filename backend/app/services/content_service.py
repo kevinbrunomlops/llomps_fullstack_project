@@ -115,7 +115,7 @@ def rank_places(
         if city and _normalize(place.city) != _normalize(city):
             continue
 
-        if category and _normalize(place.category) != _normalize(city):
+        if category and _normalize(place.category) != _normalize(category):
             continue
 
         score = _score_place(
