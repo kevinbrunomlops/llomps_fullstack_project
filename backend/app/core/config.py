@@ -33,7 +33,7 @@ class Settings(BaseSettings):
     
     @property
     def monitoring_path(self) -> Path:
-        return self.project_root / "monitoring"
+        return self.project_root / "app"
     
     @property
     def data_path(self) -> Path:
