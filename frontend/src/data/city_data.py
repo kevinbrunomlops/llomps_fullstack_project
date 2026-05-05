@@ -1,7 +1,17 @@
 COUNTRIES_AND_CITIES = {
-    "Sweden": ["Stockholm"],
-    "Norway": ["Oslo"],
-    "Denmark": ["Copenhagen"],
+    "Sverige": ["Stockholm"],
+    "Norge": ["Oslo"],
+    "Danmark": ["Köpenhamn"],
 }
 
-BUDGET_OPTIONS = ["Low", "Medium", "High"]
+CITY_MAPPING = {
+    "Stockholm": "Stockholm",
+    "Oslo": "Oslo",
+    "Köpenhamn": "Copenhagen",
+}
+
+BUDGET_OPTIONS = {
+    "Låg": "low",
+    "Medel": "medium",
+    "Hög": "high",
+}

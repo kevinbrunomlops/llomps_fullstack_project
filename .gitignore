@@ -209,4 +209,7 @@ __marimo__/
 # DS
 *.DS_Store
 
-backend/monitoring/mlflow.db
+# MLflow / local databases
+mlflow.db
+*.db
+mlruns/

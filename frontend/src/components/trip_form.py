@@ -1,32 +1,36 @@
 import streamlit as st
-from data.city_data import COUNTRIES_AND_CITIES, BUDGET_OPTIONS
+from data.city_data import COUNTRIES_AND_CITIES, BUDGET_OPTIONS, CITY_MAPPING
 
 
 def render_trip_form():
-    st.subheader("Plan your trip")
+    st.subheader("Planera din resa")
 
     country = st.selectbox(
-        "Choose a country",
+        "Välj ett land",
         list(COUNTRIES_AND_CITIES.keys())
     )
 
-    city = st.selectbox(
-        "Choose a city",
+    city_label = st.selectbox(
+        "Välj en stad",
         COUNTRIES_AND_CITIES[country]
     )
 
+    city = CITY_MAPPING[city_label]
+
     days = st.slider(
-        "How many days are you staying?",
+        "Hur många dagar planerar du att resa?",
         min_value=1,
         max_value=14,
         value=4
     )
 
-    budget = st.selectbox(
-        "Choose your budget",
-        BUDGET_OPTIONS
+    budget_label = st.selectbox(
+        "Välj din budget",
+        list(BUDGET_OPTIONS.keys())
     )
 
-    submitted = st.button("Start travel chat")
+    budget = BUDGET_OPTIONS[budget_label]
+
+    submitted = st.button("Börja resechatt")
 
     return submitted, country, city, days, budget

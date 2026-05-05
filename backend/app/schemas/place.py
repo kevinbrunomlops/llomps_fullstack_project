@@ -34,4 +34,4 @@ class Place(BaseModel):
 @property
 def source(self) -> str:
     """Backward-compatible source name used by ChatResponse."""
-    return self.sourc_type
+    return self.source_type
