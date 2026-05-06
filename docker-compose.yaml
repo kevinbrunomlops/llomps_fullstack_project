@@ -27,3 +27,18 @@ services:
         - BACKEND_URL=http://backend:8000
       depends_on:
         - backend
+      
+      mlflow:
+        build:
+          context: .
+          dockerfile: backend/Dockerfile
+        container_name: travel-chatbot-mlflow
+        ports:
+          - "5000:5000"
+        volumes:
+          - ./monitoring:/app/monitoring
+        command: >
+          uv run mlflow ui
+          --backend-store-uri sqlite:///app/monitoring/mlflow.db
+          --host 0.0.0.0
+          --port 5001
