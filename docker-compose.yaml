@@ -2,7 +2,7 @@ services:
   backend:
     build:
       context: .
-      dockerfile: backend/Dockerfile
+      dockerfile: dockerfiles/backend.dockerfile
     container_name: travel-chatbot-backend
     ports:
       - "8000:8000"
@@ -13,11 +13,17 @@ services:
     volumes:
       - ./backend/data:/app/backend/data
       - ./monitoring:/app/monitoring
+     
+    command: >
+      uv run uvicorn backend.app.main:app
+      --host 0.0.0.0
+      --port 8000
+
     
     frontend:
       build:
         context: .
-        dockerfile: frontend/Dockerfile
+        dockerfile: dockerfiles/frontend.dockerfile
       container_name: travel-chatbot-frontend
       ports:
         - "8501.8501"
@@ -31,7 +37,7 @@ services:
       mlflow:
         build:
           context: .
-          dockerfile: backend/Dockerfile
+          dockerfile: dockerfiles/backend.dockerfile
         container_name: travel-chatbot-mlflow
         ports:
           - "5000:5000"
