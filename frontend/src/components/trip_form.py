@@ -1,5 +1,5 @@
 import streamlit as st
-from data.city_data import COUNTRIES_AND_CITIES, BUDGET_OPTIONS, CITY_MAPPING
+from frontend.src.data.city_data import COUNTRIES_AND_CITIES, BUDGET_OPTIONS, CITY_MAPPING
 
 
 def render_trip_form():

@@ -5,7 +5,7 @@ WORKDIR /app
 COPY pyproject.toml uv.lock ./
 
 COPY backend ./backend
-COPY montoring ./montoring
+COPY monitoring ./montoring
 
 RUN pip install uv
 RUN uv sync --frozen
