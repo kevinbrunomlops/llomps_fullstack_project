@@ -20,31 +20,31 @@ services:
       --port 8000
 
     
-    frontend:
-      build:
-        context: .
-        dockerfile: dockerfiles/frontend.dockerfile
-      container_name: travel-chatbot-frontend
-      ports:
-        - "8501.8501"
-      env_file:
-        - .env
-      environment:
-        - BACKEND_URL=http://backend:8000
-      depends_on:
-        - backend
-      
-      mlflow:
-        build:
-          context: .
-          dockerfile: dockerfiles/backend.dockerfile
-        container_name: travel-chatbot-mlflow
-        ports:
-          - "5000:5000"
-        volumes:
-          - ./monitoring:/app/monitoring
-        command: >
-          uv run mlflow ui
-          --backend-store-uri sqlite:///app/monitoring/mlflow.db
-          --host 0.0.0.0
-          --port 5001
+  frontend:
+    build:
+      context: .
+      dockerfile: dockerfiles/frontend.dockerfile
+    container_name: travel-chatbot-frontend
+    ports:
+      - "8501:8501"
+    env_file:
+      - .env
+    environment:
+      - BACKEND_URL=http://backend:8000
+    depends_on:
+      - backend
+    
+  mlflow:
+    build:
+      context: .
+      dockerfile: dockerfiles/backend.dockerfile
+    container_name: travel-chatbot-mlflow
+    ports:
+      - "5001:5001"
+    volumes:
+      - ./monitoring:/app/monitoring
+    command: >
+      uv run mlflow ui
+      --backend-store-uri sqlite:////app/monitoring/mlflow.db
+      --host 0.0.0.0
+      --port 5001
