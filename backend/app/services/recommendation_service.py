@@ -6,10 +6,10 @@ Optional source: Google maps Places API when use_google_maps=True.
 
 from __future__ import annotations
 
-from app.schemas.place import Place
-from app.schemas.recommendations import RecommendationRequest, RecommendationResponse
-from app.services.content_service import rank_places, get_supported_cities
-from app.services.google_maps_service import google_maps_service
+from backend.app.schemas.place import Place
+from backend.app.schemas.recommendations import RecommendationRequest, RecommendationResponse
+from backend.app.services.content_service import rank_places, get_supported_cities
+from backend.app.services.google_maps_service import google_maps_service
 
 
 def _merge_unique(

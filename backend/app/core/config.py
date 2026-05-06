@@ -8,13 +8,18 @@ class Settings(BaseSettings):
     openrouter_api_key: str = Field(default="", alias="OPENROUTER_API_KEY")
     openrouter_base_url: str = Field(default="https://openrouter.ai/api/v1", alias="OPENROUTER_BASE_URL")
     google_maps_api_key: str = Field(default="", alias="GOOGLE_MAPS_API_KEY")
+    
     mlflow_experiment_name: str = Field(default="travel_chatbot_scandinavia", alias="MLFLOW_EXPERIMENT_NAME")
     mlflow_tracking_db_filename: str = Field(default="mlflow.db", alias="MLFLOW_TRACKING_DB_FILENAME")
+    mlflow_monitoring_path: str | None = Field(default=None, alias="MLFLOW_MONITORING_PATH")
+
     prompt_name_system: str = Field(default="travel_chatbot_system_prompt", alias="PROMPT_NAME_SYSTEM")
     prompt_name_tool_dataset: str = Field(default="travel_dataset_lookup_description", alias="PROMPT_NAME_TOOL_DATASET")
     prompt_name_tool_google_maps: str = Field(default="travel_google_maps_lookup_description", alias="PROMPT_NAME_TOOL_GOOGLE_MAPS")
+    
     app_env: str = Field(default="dev", alias="APP_ENV")
     app_name: str = Field(default="travel-chatbot-scandinavia", alias="APP_NAME")
+    
     request_timeout_seconds: int = Field(default=20, alias="REQUEST_TIMEOUT_SECONDS")
     google_maps_max_results: int = Field(default=5, alias="GOOGLE_MAPS_MAX_RESULTS")
     use_google_maps: bool = Field(default=True, alias="USE_GOOGLE_MAPS")
@@ -27,17 +32,23 @@ class Settings(BaseSettings):
         extra="ignore",
     )
 
-    @property
-    def project_root(self) -> Path:
+    @property 
+    def backend_root(self) -> Path:
         return Path(__file__).resolve().parents[2]
+
+    @property
+    def repo_root(self) -> Path:
+        return self.backend_root.parent
     
     @property
     def monitoring_path(self) -> Path:
-        return self.project_root / "app"
+        if self.mlflow_monitoring_path:
+            return Path(self.mlflow_monitoring_path)
+        return self.repo_root / "monitoring"
     
     @property
     def data_path(self) -> Path:
-        return self.project_root / "data"
+        return self.backend_root / "data"
     
     @property
     def tracking_uri(self) -> str:

@@ -4,7 +4,8 @@ from typing import Any
 
 import mlflow
 
-from app.core.config import get_settings
+from backend.app.core.config import get_settings
+
 
 def set_experiment(name: str | None = None) -> None:
     settings = get_settings()

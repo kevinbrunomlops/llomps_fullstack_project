@@ -9,8 +9,8 @@ import json
 from functools import lru_cache
 from typing import Any
 
-from app.core.config import get_settings
-from app.schemas.place import Place
+from backend.app.core.config import get_settings
+from backend.app.schemas.place import Place
 
 
 DATASET_FILENAME = "scandinavia_data.json"
