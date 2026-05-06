@@ -12,13 +12,13 @@ from dotenv import load_dotenv
 from mlflow.genai.prompts import load_prompt
 from pydantic_ai import Agent
 
-from app.core.constants import MODEL_MEDIUM
-from app.core.mlflow_utils import add_request_tags
-from app.schemas.chat import ChatRequest, ChatResponse
-from app.schemas.recommendations import RecommendationRequest
-from app.services.content_service import filter_places, format_places_for_prompt
-from app.services.planner_service import build_day_plan
-from app.services.recommendation_service import build_recommendations
+from backend.app.core.constants import MODEL_MEDIUM
+from backend.app.core.mlflow_utils import add_request_tags
+from backend.app.schemas.chat import ChatRequest, ChatResponse
+from backend.app.schemas.recommendations import RecommendationRequest
+from backend.app.services.content_service import filter_places, format_places_for_prompt
+from backend.app.services.planner_service import build_day_plan
+from backend.app.services.recommendation_service import build_recommendations
 
 
 load_dotenv()

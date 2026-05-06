@@ -1,6 +1,6 @@
 """Simple deterministic day-plan builder from recommendation result."""
 
-from app.schemas.recommendations import RecommendationResponse
+from backend.app.schemas.recommendations import RecommendationResponse
 
 
 def _pick(items: list, index: int):

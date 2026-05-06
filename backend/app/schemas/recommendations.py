@@ -1,6 +1,6 @@
 """Request and response schemas for recommendations"""
 from pydantic import BaseModel, Field
-from app.schemas.place import Place
+from backend.app.schemas.place import Place
 
 class RecommendationRequest(BaseModel):
     city: str
