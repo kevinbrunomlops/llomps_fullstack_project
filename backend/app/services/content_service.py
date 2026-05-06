@@ -149,31 +149,31 @@ def _score_place(
     environment:str | None = None,
     travel_group:str | None = None,   
 )-> int:
-  score = place.priority_score or 0
+    score = place.priority_score or 0
 
-  if interests and _matches_interests(place, interests):
-      score += 30
+    if interests and _matches_interests(place, interests):
+        score += 30
 
-  if budget and _normalize(place.budget_level) ==_normalize(budget):
-      score += 20
+    if budget and _normalize(place.budget_level) ==_normalize(budget):
+        score += 20
  
-  if environment:
-      requested_environment =_normalize(environment)
-      place_environment =_normalize(place.environment)
+    if environment:
+        requested_environment = _normalize(environment)
+        place_environment = _normalize(place.environment)
 
-  if place_environment == requested_environment:
-      score += 15
-  elif place_environment == "mixed":
-      score +=8
+        if place_environment == requested_environment:
+            score += 15
+        elif place_environment == "mixed":
+            score += 8
 
-  if travel_group and _normalize(travel_group) in {_normalize(style) for style in place.travel_styles
-  }:
-      score += 10
+    if travel_group and _normalize(travel_group) in {_normalize(style) for style in place.travel_styles
+    }:
+        score += 10
 
-  if family_friendly is not None and place.family_friendly== family_friendly:
-      score += 10
+    if family_friendly is not None and place.family_friendly== family_friendly:
+        score += 10
 
-  return score
+    return score
 
 
 def filter_places(
@@ -248,7 +248,7 @@ def format_places_for_prompt(places: list[Place]) -> str:
             f"{place.name} | city={place.city} | country={place.country or 'unknown'} |"            
             f"category{place.category} | subcategories={', '.join(place.subcategories) or 'n/a'} | "
             f"budget{place.budget_level or place.price_level or 'unknow'} | "
-            f"family_friendly{place.family_friendly} | environment={place.environement or 'unknow'}| "
+            f"family_friendly{place.family_friendly} | environment={place.environment or 'unknow'}| "
             f"area{place.area or place.address or 'unknown'} | "
             f"duration_hours={place.recommended_duration_hours or 'n/a'}  | "
             f"tags{', '.join(place.tags) or 'n/a'} | "
