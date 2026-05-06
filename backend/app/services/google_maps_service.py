@@ -4,8 +4,8 @@ from typing import Any
 
 import httpx
 
-from app.core.config import get_settings
-from app.schemas.place import Place
+from backend.app.core.config import get_settings
+from backend.app.schemas.place import Place
 
 PLACES_TEXT_SEARCH_URL = "https://places.googleapis.com/v1/places:searchText"
 

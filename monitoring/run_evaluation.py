@@ -9,10 +9,10 @@ from mlflow.genai import evaluate
 from mlflow.genai.datasets import create_dataset
 from mlflow.genai.scorers import Guidelines
 
-from app.agents.travel_agent import run_travel_agent
-from app.core.constants import LLM_JUDGE
-from app.core.mlflow_utils import set_experiment
-from app.schemas.chat import ChatRequest
+from backend.app.agent.travel_agent import run_travel_agent
+from backend.app.core.constants import LLM_JUDGE
+from backend.app.core.mlflow_utils import set_experiment
+from backend.app.schemas.chat import ChatRequest
 
 EXPERIMENT_NAME = "travel_chatbot_evaluation"
 DATASET_NAME = "travel_chatbot_eval_v1"

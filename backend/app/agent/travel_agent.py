@@ -12,13 +12,13 @@ from dotenv import load_dotenv
 from mlflow.genai.prompts import load_prompt
 from pydantic_ai import Agent
 
-from app.core.constants import MODEL_MEDIUM, MODEL_LARGE
-from app.core.mlflow_utils import add_request_tags
-from app.schemas.chat import ChatRequest, ChatResponse
-from app.schemas.recommendations import RecommendationRequest
-from app.services.content_service import filter_places, format_places_for_prompt
-from app.services.planner_service import build_day_plan
-from app.services.recommendation_service import build_recommendations
+from backend.app.core.constants import MODEL_MEDIUM, MODEL_LARGE
+from backend.app.core.mlflow_utils import add_request_tags
+from backend.app.schemas.chat import ChatRequest, ChatResponse
+from backend.app.schemas.recommendations import RecommendationRequest
+from backend.app.services.content_service import filter_places, format_places_for_prompt
+from backend.app.services.planner_service import build_day_plan
+from backend.app.services.recommendation_service import build_recommendations
 
 
 load_dotenv()
@@ -56,6 +56,26 @@ def lookup_dataset_places(
     )
     return format_places_for_prompt(places[:10])
 
+def to_swedish_city(city: str | None) -> str:
+    return {
+        "Copenhagen": "Köpenhamn",
+        "København": "Köpenhamn",
+        "Kobenhavn": "Köpenhamn",
+        "Stockholm": "Stockholm",
+        "Oslo": "Oslo",
+    }.get(city or "Stockholm", city or "Stockholm")
+
+
+def to_swedish_budget(budget: str | None) -> str | None:
+    return {
+        "low": "låg",
+        "medium": "medel",
+        "high": "hög",
+        "Low": "låg",
+        "Medium": "medel",
+        "High": "hög",
+    }.get(budget, budget)
+
 async def run_travel_agent(request: ChatRequest) -> ChatResponse:
     recommendation_request = RecommendationRequest(
         city=request.city or "Stockholm",
@@ -76,17 +96,8 @@ async def run_travel_agent(request: ChatRequest) -> ChatResponse:
         recommendations=recommendations,
     )
 
-    swedish_city = {
-        "Stockholm": "Stockholm",
-        "Oslo": "Oslo",
-        "Copenhagen": "Köpenhamn",
-    }.get(recommendation_request.city, recommendation_request.city)
-
-    swedish_budget = {
-        "low": "låg",
-        "medium": "medel",
-        "high": "hög",
-    }.get(recommendation_request.budget, recommendation_request.budget)
+    swedish_city = to_swedish_city(recommendation_request.city)
+    swedish_budget = to_swedish_budget(recommendation_request.budget)
     
     prompt = f"""
 Användarens fråga:
