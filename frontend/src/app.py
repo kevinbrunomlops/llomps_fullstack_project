@@ -4,7 +4,10 @@ from frontend.src.components.trip_form import render_trip_form
 from frontend.src.components.chat_interface import render_chat_interface
 import requests
 
-API_URL = "http://127.0.0.1:8000/chat"
+import os
+
+BACKEND_URL = os.getenv("BACKEND_URL", "http://127.0.0.1:8000")
+API_URL = f"{BACKEND_URL}/chat"
 
 st.set_page_config(
     page_title="Scandinavia Travel Chatbot",

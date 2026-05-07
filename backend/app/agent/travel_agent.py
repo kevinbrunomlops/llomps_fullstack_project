@@ -12,7 +12,7 @@ from dotenv import load_dotenv
 from mlflow.genai.prompts import load_prompt
 from pydantic_ai import Agent
 
-from backend.app.core.constants import MODEL_MEDIUM
+from backend.app.core.constants import MODEL_MEDIUM, MODEL_LARGE
 from backend.app.core.mlflow_utils import add_request_tags
 from backend.app.schemas.chat import ChatRequest, ChatResponse
 from backend.app.schemas.recommendations import RecommendationRequest
@@ -24,7 +24,7 @@ from backend.app.services.recommendation_service import build_recommendations
 load_dotenv()
 
 travel_agent = Agent(
-    model=MODEL_MEDIUM,
+    model=MODEL_LARGE,
     system_prompt=load_prompt("travel_chatbot_system_prompt").template
 )
 
@@ -56,6 +56,26 @@ def lookup_dataset_places(
     )
     return format_places_for_prompt(places[:10])
 
+def to_swedish_city(city: str | None) -> str:
+    return {
+        "Copenhagen": "Köpenhamn",
+        "København": "Köpenhamn",
+        "Kobenhavn": "Köpenhamn",
+        "Stockholm": "Stockholm",
+        "Oslo": "Oslo",
+    }.get(city or "Stockholm", city or "Stockholm")
+
+
+def to_swedish_budget(budget: str | None) -> str | None:
+    return {
+        "low": "låg",
+        "medium": "medel",
+        "high": "hög",
+        "Low": "låg",
+        "Medium": "medel",
+        "High": "hög",
+    }.get(budget, budget)
+
 async def run_travel_agent(request: ChatRequest) -> ChatResponse:
     recommendation_request = RecommendationRequest(
         city=request.city or "Stockholm",
@@ -75,38 +95,52 @@ async def run_travel_agent(request: ChatRequest) -> ChatResponse:
         days=recommendation_request.days or 1,
         recommendations=recommendations,
     )
-    prompt =f"""
-User_request: {request.message}
-Structured travel context:
-- city: {recommendation_request.city}
-- days: {recommendation_request.days}
-- budget: {recommendation_request.budget}
-- interests: {recommendation_request.interests}
-- travel_group: {recommendation_request.travel_group}
-- family_friendly: {recommendation_request.family_friendly}
-- environment: {recommendation_request.environment}
-- use_google_maps: {recommendation_request.use_google_maps}
 
-Candidate attractions:
+    swedish_city = to_swedish_city(recommendation_request.city)
+    swedish_budget = to_swedish_budget(recommendation_request.budget)
+    
+    prompt = f"""
+Användarens fråga:
+{request.message}
+
+Strukturerad reseinformation:
+- stad: {swedish_city}
+- antal dagar: {recommendation_request.days}
+- budgetnivå: {swedish_budget}
+- intressen: {recommendation_request.interests}
+- resesällskap: {recommendation_request.travel_group}
+- familjevänligt: {recommendation_request.family_friendly}
+- miljö: {recommendation_request.environment}
+- google maps aktiverat: {recommendation_request.use_google_maps}
+
+Möjliga sevärdheter:
 {format_places_for_prompt(recommendations.attractions)}
 
-Candidate restaurants:
+Möjliga restauranger:
 {format_places_for_prompt(recommendations.restaurants)}
 
-Candidate activities:
+Möjliga aktiviteter:
 {format_places_for_prompt(recommendations.activities)}
 
-Simple draft day plan:
+Enkel preliminär dagsplan:
 {day_plan}
 
-Instructions:
-- Answer in Swedish.
-- Use only the candidate places above unless you clearly say that you are giving a general suggestion. 
-- Keep the tone helpful and practical.
-- Use headings for Sevärdheter, Restauranger, Aktiviteter and Enkel dagsplan. 
-- Respect budget, travel group, family-friendly and environment filters when they are provided.
-- Mention whether the recommendations come from the manual dataset or Google Maps if relevant. 
-- End with 2 short follow-up questions.
+Instruktioner:
+- Svara ALLTID på naturlig svenska.
+- Använd aldrig engelska, danska eller norska ord i svaret.
+- Använd svenska namn:
+  - Copenhagen = Köpenhamn
+- Om datasetet innehåller engelska beskrivningar ska du skriva om och översätta dem till naturlig svenska.
+- Skriv alltid:
+  - Dag 1, Dag 2, Dag 3
+  aldrig:
+  - Day 1
+- Alla rubriker ska vara på svenska.
+- Skriv som en personlig och hjälpsam svensk reseguide.
+- Anpassa rekommendationerna efter budget, resesällskap och miljö.
+- Använd bara platser från listorna ovan om du inte tydligt säger att det är ett generellt tips.
+- Nämn om rekommendationerna kommer från datasetet eller Google Maps om det är relevant.
+- Avsluta alltid med två korta följdfrågor på svenska.
 """
     
     add_request_tags(

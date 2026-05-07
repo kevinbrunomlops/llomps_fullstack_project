@@ -24,12 +24,14 @@ services:
     build:
       context: .
       dockerfile: dockerfiles/frontend.dockerfile
+    working_dir: /app
     container_name: travel-chatbot-frontend
     ports:
       - "8501:8501"
     env_file:
       - .env
     environment:
+      - PYTHONPATH=/app
       - BACKEND_URL=http://backend:8000
     depends_on:
       - backend
