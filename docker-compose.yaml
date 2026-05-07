@@ -4,6 +4,7 @@ services:
       context: .
       dockerfile: dockerfiles/backend.dockerfile
     container_name: travel-chatbot-backend
+    image: backend:v1
     ports:
       - "8000:8000"
     env_file:
@@ -28,6 +29,7 @@ services:
     container_name: travel-chatbot-frontend
     ports:
       - "8501:8501"
+    image: frontend:v1
     env_file:
       - .env
     environment:
@@ -43,6 +45,7 @@ services:
     container_name: travel-chatbot-mlflow
     ports:
       - "5001:5001"
+    image: ghcr.io/mlflow/mlflow:latest
     volumes:
       - ./monitoring:/app/monitoring
     command: >
