@@ -208,8 +208,3 @@ __marimo__/
 
 # DS
 *.DS_Store
-
-# MLflow / local databases
-mlflow.db
-*.db
-mlruns/
