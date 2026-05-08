@@ -45,7 +45,7 @@ services:
     container_name: travel-chatbot-mlflow
     ports:
       - "5001:5001"
-    image: ghcr.io/mlflow/mlflow:latest
+    image: backend:v1
     volumes:
       - ./monitoring:/app/monitoring
     command: >
