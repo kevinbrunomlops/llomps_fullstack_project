@@ -19,6 +19,7 @@ from backend.app.schemas.recommendations import RecommendationRequest
 from backend.app.services.content_service import filter_places, format_places_for_prompt
 from backend.app.services.planner_service import build_day_plan
 from backend.app.services.recommendation_service import build_recommendations
+from backend.app.utils.localization import to_swedish_city, to_swedish_budget
 
 
 load_dotenv()
@@ -55,26 +56,6 @@ def lookup_dataset_places(
         
     )
     return format_places_for_prompt(places[:10])
-
-def to_swedish_city(city: str | None) -> str:
-    return {
-        "Copenhagen": "Köpenhamn",
-        "København": "Köpenhamn",
-        "Kobenhavn": "Köpenhamn",
-        "Stockholm": "Stockholm",
-        "Oslo": "Oslo",
-    }.get(city or "Stockholm", city or "Stockholm")
-
-
-def to_swedish_budget(budget: str | None) -> str | None:
-    return {
-        "low": "låg",
-        "medium": "medel",
-        "high": "hög",
-        "Low": "låg",
-        "Medium": "medel",
-        "High": "hög",
-    }.get(budget, budget)
 
 async def run_travel_agent(request: ChatRequest) -> ChatResponse:
     recommendation_request = RecommendationRequest(
@@ -126,20 +107,17 @@ Enkel preliminär dagsplan:
 {day_plan}
 
 Instruktioner:
-- Svara ALLTID på naturlig svenska.
-- Använd aldrig engelska, danska eller norska ord i svaret.
-- Använd svenska namn:
-  - Copenhagen = Köpenhamn
-- Om datasetet innehåller engelska beskrivningar ska du skriva om och översätta dem till naturlig svenska.
-- Skriv alltid:
-  - Dag 1, Dag 2, Dag 3
-  aldrig:
-  - Day 1
+- Svara alltid på naturlig svenska.
+- Använd svenska namn på städer och områden när det finns.
+- Om datasetet innehåller engelska beskrivningar ska du översätta och skriva om dem till naturlig svenska.
+- Skriv aldrig "Day 1", skriv alltid "Dag 1".
 - Alla rubriker ska vara på svenska.
-- Skriv som en personlig och hjälpsam svensk reseguide.
-- Anpassa rekommendationerna efter budget, resesällskap och miljö.
-- Använd bara platser från listorna ovan om du inte tydligt säger att det är ett generellt tips.
-- Nämn om rekommendationerna kommer från datasetet eller Google Maps om det är relevant.
+- Skriv som en personlig, hjälpsam och konkret svensk reseguide.
+- Anpassa rekommendationerna efter budget, antal dagar, resesällskap, intressen och miljö.
+- Prioritera platser från listorna ovan.
+- Hitta inte på öppettider, priser, betyg eller exakta adresser om de inte finns i datan.
+- Om det saknas tillräcklig information, säg det tydligt och ge ett försiktigt generellt tips.
+- Nämn inte tekniska ord som JSON, RAG, embedding eller dataset för användaren.
 - Avsluta alltid med två korta följdfrågor på svenska.
 """
     

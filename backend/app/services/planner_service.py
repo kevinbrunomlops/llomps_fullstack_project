@@ -15,17 +15,17 @@ def build_day_plan(city: str, days: int, recommendations: RecommendationResponse
     
     day_lines: list[str] = []
     for day in range(1, days + 1):
-        attraction = _pick(recommendations.restaurants, day -1) 
+        attraction = _pick(recommendations.attractions, day -1)
         restaurant = _pick(recommendations.restaurants, day -1)
         activity = _pick(recommendations.activities, day - 1)
 
-        parts = [f"Day {day} in {city}:"]
+        parts = [f"Dag {day} i {city}:"]
         if attraction:
-            parts.append(f"start with {attraction.name}")
+            parts.append(f"starta med {attraction.name}")
         if restaurant:
-            parts.append(f"eat at {restaurant.name}")
+            parts.append(f"ät på {restaurant.name}")
         if activity:
-            parts.append(f"finish with {activity.name}")
+            parts.append(f"slutar med {activity.name}")
         day_lines.append(", ".join(parts) + ".")
 
     return "\n".join(day_lines)

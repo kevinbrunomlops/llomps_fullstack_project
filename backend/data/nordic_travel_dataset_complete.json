@@ -1,0 +1,3342 @@
+{
+  "dataset_name": "Nordic Travel Dataset",
+  "version": "2.0",
+  "countries": [
+    {
+      "country": "Sweden",
+      "cities": [
+        {
+          "city": "Stockholm",
+          "places": [
+            {
+              "id": "sweden_stockholm_gamla_stan",
+              "name": "Gamla Stan",
+              "country": "Sweden",
+              "city": "Stockholm",
+              "category": "attraction",
+              "subcategories": [
+                "culture",
+                "nature"
+              ],
+              "description": "Gamla Stan is a popular destination in Stockholm, Sweden, known for unique Nordic travel experiences.",
+              "budget_level": "low",
+              "family_friendly": true,
+              "environment": "indoors",
+              "travel_styles": [
+                "couple",
+                "friends",
+                "family"
+              ],
+              "recommended_duration_hours": 2,
+              "best_seasons": [
+                "winter",
+                "all_year"
+              ],
+              "tags": [
+                "gamla_stan",
+                "stockholm",
+                "nordic"
+              ],
+              "priority_score": 3,
+              "source_type": "manual",
+              "embedding_text": "Gamla Stan in Stockholm Sweden. Nordic travel experience. Category: attraction."
+            },
+            {
+              "id": "sweden_stockholm_vasa_museum",
+              "name": "Vasa Museum",
+              "country": "Sweden",
+              "city": "Stockholm",
+              "category": "activity",
+              "subcategories": [
+                "culture",
+                "nature"
+              ],
+              "description": "Vasa Museum is a popular destination in Stockholm, Sweden, known for unique Nordic travel experiences.",
+              "budget_level": "high",
+              "family_friendly": true,
+              "environment": "outdoors",
+              "travel_styles": [
+                "friends",
+                "solo",
+                "family"
+              ],
+              "recommended_duration_hours": 3,
+              "best_seasons": [
+                "all_year",
+                "autumn"
+              ],
+              "tags": [
+                "vasa_museum",
+                "stockholm",
+                "nordic"
+              ],
+              "priority_score": 2,
+              "source_type": "manual",
+              "embedding_text": "Vasa Museum in Stockholm Sweden. Nordic travel experience. Category: activity."
+            },
+            {
+              "id": "sweden_stockholm_skansen",
+              "name": "Skansen",
+              "country": "Sweden",
+              "city": "Stockholm",
+              "category": "attraction",
+              "subcategories": [
+                "culture",
+                "nature"
+              ],
+              "description": "Skansen is a popular destination in Stockholm, Sweden, known for unique Nordic travel experiences.",
+              "budget_level": "medium",
+              "family_friendly": false,
+              "environment": "outdoors",
+              "travel_styles": [
+                "solo",
+                "family",
+                "couple"
+              ],
+              "recommended_duration_hours": 1.5,
+              "best_seasons": [
+                "spring",
+                "winter"
+              ],
+              "tags": [
+                "skansen",
+                "stockholm",
+                "nordic"
+              ],
+              "priority_score": 2,
+              "source_type": "manual",
+              "embedding_text": "Skansen in Stockholm Sweden. Nordic travel experience. Category: attraction."
+            },
+            {
+              "id": "sweden_stockholm_fotografiska",
+              "name": "Fotografiska",
+              "country": "Sweden",
+              "city": "Stockholm",
+              "category": "attraction",
+              "subcategories": [
+                "culture",
+                "nature"
+              ],
+              "description": "Fotografiska is a popular destination in Stockholm, Sweden, known for unique Nordic travel experiences.",
+              "budget_level": "high",
+              "family_friendly": true,
+              "environment": "outdoors",
+              "travel_styles": [
+                "solo",
+                "family",
+                "couple"
+              ],
+              "recommended_duration_hours": 3,
+              "best_seasons": [
+                "winter",
+                "autumn"
+              ],
+              "tags": [
+                "fotografiska",
+                "stockholm",
+                "nordic"
+              ],
+              "priority_score": 3,
+              "source_type": "manual",
+              "embedding_text": "Fotografiska in Stockholm Sweden. Nordic travel experience. Category: attraction."
+            },
+            {
+              "id": "sweden_stockholm_abba_museum",
+              "name": "ABBA Museum",
+              "country": "Sweden",
+              "city": "Stockholm",
+              "category": "restaurant",
+              "subcategories": [
+                "food",
+                "casual dining"
+              ],
+              "description": "ABBA Museum is a popular destination in Stockholm, Sweden, known for unique Nordic travel experiences.",
+              "budget_level": "high",
+              "family_friendly": true,
+              "environment": "indoors",
+              "travel_styles": [
+                "solo",
+                "friends",
+                "couple"
+              ],
+              "recommended_duration_hours": 3,
+              "best_seasons": [
+                "autumn",
+                "spring"
+              ],
+              "tags": [
+                "abba_museum",
+                "stockholm",
+                "nordic"
+              ],
+              "priority_score": 3,
+              "source_type": "manual",
+              "embedding_text": "ABBA Museum in Stockholm Sweden. Nordic travel experience. Category: restaurant."
+            }
+          ]
+        },
+        {
+          "city": "Gothenburg",
+          "places": [
+            {
+              "id": "sweden_gothenburg_liseberg",
+              "name": "Liseberg",
+              "country": "Sweden",
+              "city": "Gothenburg",
+              "category": "restaurant",
+              "subcategories": [
+                "food",
+                "casual dining"
+              ],
+              "description": "Liseberg is a popular destination in Gothenburg, Sweden, known for unique Nordic travel experiences.",
+              "budget_level": "low",
+              "family_friendly": false,
+              "environment": "indoors",
+              "travel_styles": [
+                "solo",
+                "family",
+                "couple"
+              ],
+              "recommended_duration_hours": 3,
+              "best_seasons": [
+                "spring",
+                "winter"
+              ],
+              "tags": [
+                "liseberg",
+                "gothenburg",
+                "nordic"
+              ],
+              "priority_score": 2,
+              "source_type": "manual",
+              "embedding_text": "Liseberg in Gothenburg Sweden. Nordic travel experience. Category: restaurant."
+            },
+            {
+              "id": "sweden_gothenburg_haga",
+              "name": "Haga",
+              "country": "Sweden",
+              "city": "Gothenburg",
+              "category": "restaurant",
+              "subcategories": [
+                "food",
+                "casual dining"
+              ],
+              "description": "Haga is a popular destination in Gothenburg, Sweden, known for unique Nordic travel experiences.",
+              "budget_level": "low",
+              "family_friendly": false,
+              "environment": "mixed",
+              "travel_styles": [
+                "solo",
+                "couple",
+                "family"
+              ],
+              "recommended_duration_hours": 4,
+              "best_seasons": [
+                "spring",
+                "all_year"
+              ],
+              "tags": [
+                "haga",
+                "gothenburg",
+                "nordic"
+              ],
+              "priority_score": 2,
+              "source_type": "manual",
+              "embedding_text": "Haga in Gothenburg Sweden. Nordic travel experience. Category: restaurant."
+            },
+            {
+              "id": "sweden_gothenburg_universeum",
+              "name": "Universeum",
+              "country": "Sweden",
+              "city": "Gothenburg",
+              "category": "restaurant",
+              "subcategories": [
+                "food",
+                "casual dining"
+              ],
+              "description": "Universeum is a popular destination in Gothenburg, Sweden, known for unique Nordic travel experiences.",
+              "budget_level": "low",
+              "family_friendly": false,
+              "environment": "mixed",
+              "travel_styles": [
+                "couple",
+                "family",
+                "friends"
+              ],
+              "recommended_duration_hours": 3,
+              "best_seasons": [
+                "spring",
+                "autumn"
+              ],
+              "tags": [
+                "universeum",
+                "gothenburg",
+                "nordic"
+              ],
+              "priority_score": 2,
+              "source_type": "manual",
+              "embedding_text": "Universeum in Gothenburg Sweden. Nordic travel experience. Category: restaurant."
+            },
+            {
+              "id": "sweden_gothenburg_archipelago_tour",
+              "name": "Archipelago Tour",
+              "country": "Sweden",
+              "city": "Gothenburg",
+              "category": "attraction",
+              "subcategories": [
+                "culture",
+                "nature"
+              ],
+              "description": "Archipelago Tour is a popular destination in Gothenburg, Sweden, known for unique Nordic travel experiences.",
+              "budget_level": "high",
+              "family_friendly": false,
+              "environment": "mixed",
+              "travel_styles": [
+                "family",
+                "solo",
+                "friends"
+              ],
+              "recommended_duration_hours": 3,
+              "best_seasons": [
+                "all_year",
+                "winter"
+              ],
+              "tags": [
+                "archipelago_tour",
+                "gothenburg",
+                "nordic"
+              ],
+              "priority_score": 3,
+              "source_type": "manual",
+              "embedding_text": "Archipelago Tour in Gothenburg Sweden. Nordic travel experience. Category: attraction."
+            }
+          ]
+        },
+        {
+          "city": "Malmö",
+          "places": [
+            {
+              "id": "sweden_malmo_turning_torso",
+              "name": "Turning Torso",
+              "country": "Sweden",
+              "city": "Malmö",
+              "category": "restaurant",
+              "subcategories": [
+                "food",
+                "casual dining"
+              ],
+              "description": "Turning Torso is a popular destination in Malmö, Sweden, known for unique Nordic travel experiences.",
+              "budget_level": "medium",
+              "family_friendly": true,
+              "environment": "mixed",
+              "travel_styles": [
+                "family",
+                "solo",
+                "friends"
+              ],
+              "recommended_duration_hours": 4,
+              "best_seasons": [
+                "autumn",
+                "summer"
+              ],
+              "tags": [
+                "turning_torso",
+                "malmo",
+                "nordic"
+              ],
+              "priority_score": 1,
+              "source_type": "manual",
+              "embedding_text": "Turning Torso in Malmö Sweden. Nordic travel experience. Category: restaurant."
+            },
+            {
+              "id": "sweden_malmo_ribersborg_beach",
+              "name": "Ribersborg Beach",
+              "country": "Sweden",
+              "city": "Malmö",
+              "category": "restaurant",
+              "subcategories": [
+                "food",
+                "casual dining"
+              ],
+              "description": "Ribersborg Beach is a popular destination in Malmö, Sweden, known for unique Nordic travel experiences.",
+              "budget_level": "low",
+              "family_friendly": true,
+              "environment": "outdoors",
+              "travel_styles": [
+                "couple",
+                "friends",
+                "family"
+              ],
+              "recommended_duration_hours": 3,
+              "best_seasons": [
+                "winter",
+                "autumn"
+              ],
+              "tags": [
+                "ribersborg_beach",
+                "malmo",
+                "nordic"
+              ],
+              "priority_score": 2,
+              "source_type": "manual",
+              "embedding_text": "Ribersborg Beach in Malmö Sweden. Nordic travel experience. Category: restaurant."
+            },
+            {
+              "id": "sweden_malmo_malmo_castle",
+              "name": "Malmö Castle",
+              "country": "Sweden",
+              "city": "Malmö",
+              "category": "restaurant",
+              "subcategories": [
+                "food",
+                "casual dining"
+              ],
+              "description": "Malmö Castle is a popular destination in Malmö, Sweden, known for unique Nordic travel experiences.",
+              "budget_level": "medium",
+              "family_friendly": true,
+              "environment": "outdoors",
+              "travel_styles": [
+                "friends",
+                "family",
+                "solo"
+              ],
+              "recommended_duration_hours": 1,
+              "best_seasons": [
+                "autumn",
+                "all_year"
+              ],
+              "tags": [
+                "malmo_castle",
+                "malmo",
+                "nordic"
+              ],
+              "priority_score": 3,
+              "source_type": "manual",
+              "embedding_text": "Malmö Castle in Malmö Sweden. Nordic travel experience. Category: restaurant."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "country": "Norway",
+      "cities": [
+        {
+          "city": "Oslo",
+          "places": [
+            {
+              "id": "norway_oslo_vigeland_park",
+              "name": "Vigeland Park",
+              "country": "Norway",
+              "city": "Oslo",
+              "category": "attraction",
+              "subcategories": [
+                "culture",
+                "nature"
+              ],
+              "description": "Vigeland Park is a popular destination in Oslo, Norway, known for unique Nordic travel experiences.",
+              "budget_level": "medium",
+              "family_friendly": false,
+              "environment": "mixed",
+              "travel_styles": [
+                "friends",
+                "family",
+                "solo"
+              ],
+              "recommended_duration_hours": 2,
+              "best_seasons": [
+                "summer",
+                "winter"
+              ],
+              "tags": [
+                "vigeland_park",
+                "oslo",
+                "nordic"
+              ],
+              "priority_score": 2,
+              "source_type": "manual",
+              "embedding_text": "Vigeland Park in Oslo Norway. Nordic travel experience. Category: attraction."
+            },
+            {
+              "id": "norway_oslo_munch",
+              "name": "MUNCH",
+              "country": "Norway",
+              "city": "Oslo",
+              "category": "activity",
+              "subcategories": [
+                "culture",
+                "nature"
+              ],
+              "description": "MUNCH is a popular destination in Oslo, Norway, known for unique Nordic travel experiences.",
+              "budget_level": "medium",
+              "family_friendly": true,
+              "environment": "mixed",
+              "travel_styles": [
+                "couple",
+                "friends",
+                "solo"
+              ],
+              "recommended_duration_hours": 3,
+              "best_seasons": [
+                "all_year",
+                "autumn"
+              ],
+              "tags": [
+                "munch",
+                "oslo",
+                "nordic"
+              ],
+              "priority_score": 1,
+              "source_type": "manual",
+              "embedding_text": "MUNCH in Oslo Norway. Nordic travel experience. Category: activity."
+            },
+            {
+              "id": "norway_oslo_oslo_opera_house",
+              "name": "Oslo Opera House",
+              "country": "Norway",
+              "city": "Oslo",
+              "category": "attraction",
+              "subcategories": [
+                "culture",
+                "nature"
+              ],
+              "description": "Oslo Opera House is a popular destination in Oslo, Norway, known for unique Nordic travel experiences.",
+              "budget_level": "medium",
+              "family_friendly": false,
+              "environment": "mixed",
+              "travel_styles": [
+                "friends",
+                "solo",
+                "family"
+              ],
+              "recommended_duration_hours": 1,
+              "best_seasons": [
+                "all_year",
+                "winter"
+              ],
+              "tags": [
+                "oslo_opera_house",
+                "oslo",
+                "nordic"
+              ],
+              "priority_score": 2,
+              "source_type": "manual",
+              "embedding_text": "Oslo Opera House in Oslo Norway. Nordic travel experience. Category: attraction."
+            },
+            {
+              "id": "norway_oslo_fjord_cruise",
+              "name": "Fjord Cruise",
+              "country": "Norway",
+              "city": "Oslo",
+              "category": "activity",
+              "subcategories": [
+                "culture",
+                "nature"
+              ],
+              "description": "Fjord Cruise is a popular destination in Oslo, Norway, known for unique Nordic travel experiences.",
+              "budget_level": "medium",
+              "family_friendly": false,
+              "environment": "indoors",
+              "travel_styles": [
+                "family",
+                "solo",
+                "friends"
+              ],
+              "recommended_duration_hours": 2,
+              "best_seasons": [
+                "all_year",
+                "winter"
+              ],
+              "tags": [
+                "fjord_cruise",
+                "oslo",
+                "nordic"
+              ],
+              "priority_score": 3,
+              "source_type": "manual",
+              "embedding_text": "Fjord Cruise in Oslo Norway. Nordic travel experience. Category: activity."
+            }
+          ]
+        },
+        {
+          "city": "Bergen",
+          "places": [
+            {
+              "id": "norway_bergen_bryggen",
+              "name": "Bryggen",
+              "country": "Norway",
+              "city": "Bergen",
+              "category": "attraction",
+              "subcategories": [
+                "culture",
+                "nature"
+              ],
+              "description": "Bryggen is a popular destination in Bergen, Norway, known for unique Nordic travel experiences.",
+              "budget_level": "high",
+              "family_friendly": true,
+              "environment": "indoors",
+              "travel_styles": [
+                "family",
+                "solo",
+                "friends"
+              ],
+              "recommended_duration_hours": 1,
+              "best_seasons": [
+                "spring",
+                "autumn"
+              ],
+              "tags": [
+                "bryggen",
+                "bergen",
+                "nordic"
+              ],
+              "priority_score": 1,
+              "source_type": "manual",
+              "embedding_text": "Bryggen in Bergen Norway. Nordic travel experience. Category: attraction."
+            },
+            {
+              "id": "norway_bergen_floibanen",
+              "name": "Fløibanen",
+              "country": "Norway",
+              "city": "Bergen",
+              "category": "activity",
+              "subcategories": [
+                "culture",
+                "nature"
+              ],
+              "description": "Fløibanen is a popular destination in Bergen, Norway, known for unique Nordic travel experiences.",
+              "budget_level": "low",
+              "family_friendly": true,
+              "environment": "indoors",
+              "travel_styles": [
+                "solo",
+                "friends",
+                "family"
+              ],
+              "recommended_duration_hours": 1.5,
+              "best_seasons": [
+                "winter",
+                "all_year"
+              ],
+              "tags": [
+                "floibanen",
+                "bergen",
+                "nordic"
+              ],
+              "priority_score": 1,
+              "source_type": "manual",
+              "embedding_text": "Fløibanen in Bergen Norway. Nordic travel experience. Category: activity."
+            },
+            {
+              "id": "norway_bergen_fish_market",
+              "name": "Fish Market",
+              "country": "Norway",
+              "city": "Bergen",
+              "category": "activity",
+              "subcategories": [
+                "culture",
+                "nature"
+              ],
+              "description": "Fish Market is a popular destination in Bergen, Norway, known for unique Nordic travel experiences.",
+              "budget_level": "low",
+              "family_friendly": false,
+              "environment": "indoors",
+              "travel_styles": [
+                "family",
+                "friends",
+                "couple"
+              ],
+              "recommended_duration_hours": 3,
+              "best_seasons": [
+                "autumn",
+                "winter"
+              ],
+              "tags": [
+                "fish_market",
+                "bergen",
+                "nordic"
+              ],
+              "priority_score": 2,
+              "source_type": "manual",
+              "embedding_text": "Fish Market in Bergen Norway. Nordic travel experience. Category: activity."
+            }
+          ]
+        },
+        {
+          "city": "Tromsø",
+          "places": [
+            {
+              "id": "norway_tromso_northern_lights_tour",
+              "name": "Northern Lights Tour",
+              "country": "Norway",
+              "city": "Tromsø",
+              "category": "activity",
+              "subcategories": [
+                "culture",
+                "nature"
+              ],
+              "description": "Northern Lights Tour is a popular destination in Tromsø, Norway, known for unique Nordic travel experiences.",
+              "budget_level": "medium",
+              "family_friendly": true,
+              "environment": "mixed",
+              "travel_styles": [
+                "friends",
+                "solo",
+                "family"
+              ],
+              "recommended_duration_hours": 1,
+              "best_seasons": [
+                "all_year",
+                "winter"
+              ],
+              "tags": [
+                "northern_lights_tour",
+                "tromso",
+                "nordic"
+              ],
+              "priority_score": 2,
+              "source_type": "manual",
+              "embedding_text": "Northern Lights Tour in Tromsø Norway. Nordic travel experience. Category: activity."
+            },
+            {
+              "id": "norway_tromso_arctic_cathedral",
+              "name": "Arctic Cathedral",
+              "country": "Norway",
+              "city": "Tromsø",
+              "category": "attraction",
+              "subcategories": [
+                "culture",
+                "nature"
+              ],
+              "description": "Arctic Cathedral is a popular destination in Tromsø, Norway, known for unique Nordic travel experiences.",
+              "budget_level": "medium",
+              "family_friendly": false,
+              "environment": "outdoors",
+              "travel_styles": [
+                "couple",
+                "solo",
+                "family"
+              ],
+              "recommended_duration_hours": 1,
+              "best_seasons": [
+                "autumn",
+                "spring"
+              ],
+              "tags": [
+                "arctic_cathedral",
+                "tromso",
+                "nordic"
+              ],
+              "priority_score": 3,
+              "source_type": "manual",
+              "embedding_text": "Arctic Cathedral in Tromsø Norway. Nordic travel experience. Category: attraction."
+            },
+            {
+              "id": "norway_tromso_whale_safari",
+              "name": "Whale Safari",
+              "country": "Norway",
+              "city": "Tromsø",
+              "category": "restaurant",
+              "subcategories": [
+                "food",
+                "casual dining"
+              ],
+              "description": "Whale Safari is a popular destination in Tromsø, Norway, known for unique Nordic travel experiences.",
+              "budget_level": "medium",
+              "family_friendly": false,
+              "environment": "outdoors",
+              "travel_styles": [
+                "friends",
+                "solo",
+                "family"
+              ],
+              "recommended_duration_hours": 4,
+              "best_seasons": [
+                "summer",
+                "winter"
+              ],
+              "tags": [
+                "whale_safari",
+                "tromso",
+                "nordic"
+              ],
+              "priority_score": 2,
+              "source_type": "manual",
+              "embedding_text": "Whale Safari in Tromsø Norway. Nordic travel experience. Category: restaurant."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "country": "Denmark",
+      "cities": [
+        {
+          "city": "Copenhagen",
+          "places": [
+            {
+              "id": "denmark_copenhagen_nyhavn",
+              "name": "Nyhavn",
+              "country": "Denmark",
+              "city": "Copenhagen",
+              "category": "attraction",
+              "subcategories": [
+                "culture",
+                "nature"
+              ],
+              "description": "Nyhavn is a popular destination in Copenhagen, Denmark, known for unique Nordic travel experiences.",
+              "budget_level": "low",
+              "family_friendly": false,
+              "environment": "outdoors",
+              "travel_styles": [
+                "friends",
+                "solo",
+                "family"
+              ],
+              "recommended_duration_hours": 1,
+              "best_seasons": [
+                "winter",
+                "summer"
+              ],
+              "tags": [
+                "nyhavn",
+                "copenhagen",
+                "nordic"
+              ],
+              "priority_score": 1,
+              "source_type": "manual",
+              "embedding_text": "Nyhavn in Copenhagen Denmark. Nordic travel experience. Category: attraction."
+            },
+            {
+              "id": "denmark_copenhagen_tivoli_gardens",
+              "name": "Tivoli Gardens",
+              "country": "Denmark",
+              "city": "Copenhagen",
+              "category": "activity",
+              "subcategories": [
+                "culture",
+                "nature"
+              ],
+              "description": "Tivoli Gardens is a popular destination in Copenhagen, Denmark, known for unique Nordic travel experiences.",
+              "budget_level": "high",
+              "family_friendly": false,
+              "environment": "outdoors",
+              "travel_styles": [
+                "family",
+                "solo",
+                "friends"
+              ],
+              "recommended_duration_hours": 1.5,
+              "best_seasons": [
+                "spring",
+                "all_year"
+              ],
+              "tags": [
+                "tivoli_gardens",
+                "copenhagen",
+                "nordic"
+              ],
+              "priority_score": 1,
+              "source_type": "manual",
+              "embedding_text": "Tivoli Gardens in Copenhagen Denmark. Nordic travel experience. Category: activity."
+            },
+            {
+              "id": "denmark_copenhagen_the_little_mermaid",
+              "name": "The Little Mermaid",
+              "country": "Denmark",
+              "city": "Copenhagen",
+              "category": "restaurant",
+              "subcategories": [
+                "food",
+                "casual dining"
+              ],
+              "description": "The Little Mermaid is a popular destination in Copenhagen, Denmark, known for unique Nordic travel experiences.",
+              "budget_level": "low",
+              "family_friendly": true,
+              "environment": "indoors",
+              "travel_styles": [
+                "couple",
+                "friends",
+                "family"
+              ],
+              "recommended_duration_hours": 1.5,
+              "best_seasons": [
+                "autumn",
+                "all_year"
+              ],
+              "tags": [
+                "the_little_mermaid",
+                "copenhagen",
+                "nordic"
+              ],
+              "priority_score": 2,
+              "source_type": "manual",
+              "embedding_text": "The Little Mermaid in Copenhagen Denmark. Nordic travel experience. Category: restaurant."
+            },
+            {
+              "id": "denmark_copenhagen_street_food_market",
+              "name": "Street Food Market",
+              "country": "Denmark",
+              "city": "Copenhagen",
+              "category": "restaurant",
+              "subcategories": [
+                "food",
+                "casual dining"
+              ],
+              "description": "Street Food Market is a popular destination in Copenhagen, Denmark, known for unique Nordic travel experiences.",
+              "budget_level": "medium",
+              "family_friendly": true,
+              "environment": "outdoors",
+              "travel_styles": [
+                "friends",
+                "family",
+                "couple"
+              ],
+              "recommended_duration_hours": 1,
+              "best_seasons": [
+                "summer",
+                "spring"
+              ],
+              "tags": [
+                "street_food_market",
+                "copenhagen",
+                "nordic"
+              ],
+              "priority_score": 1,
+              "source_type": "manual",
+              "embedding_text": "Street Food Market in Copenhagen Denmark. Nordic travel experience. Category: restaurant."
+            }
+          ]
+        },
+        {
+          "city": "Aarhus",
+          "places": [
+            {
+              "id": "denmark_aarhus_aros_museum",
+              "name": "ARoS Museum",
+              "country": "Denmark",
+              "city": "Aarhus",
+              "category": "restaurant",
+              "subcategories": [
+                "food",
+                "casual dining"
+              ],
+              "description": "ARoS Museum is a popular destination in Aarhus, Denmark, known for unique Nordic travel experiences.",
+              "budget_level": "low",
+              "family_friendly": false,
+              "environment": "indoors",
+              "travel_styles": [
+                "solo",
+                "couple",
+                "friends"
+              ],
+              "recommended_duration_hours": 2,
+              "best_seasons": [
+                "autumn",
+                "winter"
+              ],
+              "tags": [
+                "aros_museum",
+                "aarhus",
+                "nordic"
+              ],
+              "priority_score": 2,
+              "source_type": "manual",
+              "embedding_text": "ARoS Museum in Aarhus Denmark. Nordic travel experience. Category: restaurant."
+            },
+            {
+              "id": "denmark_aarhus_den_gamle_by",
+              "name": "Den Gamle By",
+              "country": "Denmark",
+              "city": "Aarhus",
+              "category": "activity",
+              "subcategories": [
+                "culture",
+                "nature"
+              ],
+              "description": "Den Gamle By is a popular destination in Aarhus, Denmark, known for unique Nordic travel experiences.",
+              "budget_level": "high",
+              "family_friendly": false,
+              "environment": "outdoors",
+              "travel_styles": [
+                "couple",
+                "solo",
+                "friends"
+              ],
+              "recommended_duration_hours": 1.5,
+              "best_seasons": [
+                "spring",
+                "summer"
+              ],
+              "tags": [
+                "den_gamle_by",
+                "aarhus",
+                "nordic"
+              ],
+              "priority_score": 3,
+              "source_type": "manual",
+              "embedding_text": "Den Gamle By in Aarhus Denmark. Nordic travel experience. Category: activity."
+            },
+            {
+              "id": "denmark_aarhus_latin_quarter",
+              "name": "Latin Quarter",
+              "country": "Denmark",
+              "city": "Aarhus",
+              "category": "activity",
+              "subcategories": [
+                "culture",
+                "nature"
+              ],
+              "description": "Latin Quarter is a popular destination in Aarhus, Denmark, known for unique Nordic travel experiences.",
+              "budget_level": "medium",
+              "family_friendly": false,
+              "environment": "mixed",
+              "travel_styles": [
+                "solo",
+                "family",
+                "friends"
+              ],
+              "recommended_duration_hours": 1,
+              "best_seasons": [
+                "spring",
+                "autumn"
+              ],
+              "tags": [
+                "latin_quarter",
+                "aarhus",
+                "nordic"
+              ],
+              "priority_score": 3,
+              "source_type": "manual",
+              "embedding_text": "Latin Quarter in Aarhus Denmark. Nordic travel experience. Category: activity."
+            }
+          ]
+        },
+        {
+          "city": "Odense",
+          "places": [
+            {
+              "id": "denmark_odense_hans_christian_andersen_museum",
+              "name": "Hans Christian Andersen Museum",
+              "country": "Denmark",
+              "city": "Odense",
+              "category": "restaurant",
+              "subcategories": [
+                "food",
+                "casual dining"
+              ],
+              "description": "Hans Christian Andersen Museum is a popular destination in Odense, Denmark, known for unique Nordic travel experiences.",
+              "budget_level": "high",
+              "family_friendly": true,
+              "environment": "indoors",
+              "travel_styles": [
+                "couple",
+                "solo",
+                "friends"
+              ],
+              "recommended_duration_hours": 1,
+              "best_seasons": [
+                "winter",
+                "summer"
+              ],
+              "tags": [
+                "hans_christian_andersen_museum",
+                "odense",
+                "nordic"
+              ],
+              "priority_score": 1,
+              "source_type": "manual",
+              "embedding_text": "Hans Christian Andersen Museum in Odense Denmark. Nordic travel experience. Category: restaurant."
+            },
+            {
+              "id": "denmark_odense_odense_zoo",
+              "name": "Odense Zoo",
+              "country": "Denmark",
+              "city": "Odense",
+              "category": "attraction",
+              "subcategories": [
+                "culture",
+                "nature"
+              ],
+              "description": "Odense Zoo is a popular destination in Odense, Denmark, known for unique Nordic travel experiences.",
+              "budget_level": "medium",
+              "family_friendly": true,
+              "environment": "mixed",
+              "travel_styles": [
+                "family",
+                "solo",
+                "couple"
+              ],
+              "recommended_duration_hours": 1.5,
+              "best_seasons": [
+                "summer",
+                "all_year"
+              ],
+              "tags": [
+                "odense_zoo",
+                "odense",
+                "nordic"
+              ],
+              "priority_score": 2,
+              "source_type": "manual",
+              "embedding_text": "Odense Zoo in Odense Denmark. Nordic travel experience. Category: attraction."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "country": "Finland",
+      "cities": [
+        {
+          "city": "Helsinki",
+          "places": [
+            {
+              "id": "finland_helsinki_suomenlinna",
+              "name": "Suomenlinna",
+              "country": "Finland",
+              "city": "Helsinki",
+              "category": "activity",
+              "subcategories": [
+                "culture",
+                "nature"
+              ],
+              "description": "Suomenlinna is a popular destination in Helsinki, Finland, known for unique Nordic travel experiences.",
+              "budget_level": "low",
+              "family_friendly": false,
+              "environment": "outdoors",
+              "travel_styles": [
+                "couple",
+                "solo",
+                "family"
+              ],
+              "recommended_duration_hours": 2,
+              "best_seasons": [
+                "all_year",
+                "winter"
+              ],
+              "tags": [
+                "suomenlinna",
+                "helsinki",
+                "nordic"
+              ],
+              "priority_score": 1,
+              "source_type": "manual",
+              "embedding_text": "Suomenlinna in Helsinki Finland. Nordic travel experience. Category: activity."
+            },
+            {
+              "id": "finland_helsinki_market_square",
+              "name": "Market Square",
+              "country": "Finland",
+              "city": "Helsinki",
+              "category": "attraction",
+              "subcategories": [
+                "culture",
+                "nature"
+              ],
+              "description": "Market Square is a popular destination in Helsinki, Finland, known for unique Nordic travel experiences.",
+              "budget_level": "medium",
+              "family_friendly": true,
+              "environment": "outdoors",
+              "travel_styles": [
+                "couple",
+                "friends",
+                "solo"
+              ],
+              "recommended_duration_hours": 2,
+              "best_seasons": [
+                "summer",
+                "all_year"
+              ],
+              "tags": [
+                "market_square",
+                "helsinki",
+                "nordic"
+              ],
+              "priority_score": 2,
+              "source_type": "manual",
+              "embedding_text": "Market Square in Helsinki Finland. Nordic travel experience. Category: attraction."
+            },
+            {
+              "id": "finland_helsinki_temppeliaukio_church",
+              "name": "Temppeliaukio Church",
+              "country": "Finland",
+              "city": "Helsinki",
+              "category": "restaurant",
+              "subcategories": [
+                "food",
+                "casual dining"
+              ],
+              "description": "Temppeliaukio Church is a popular destination in Helsinki, Finland, known for unique Nordic travel experiences.",
+              "budget_level": "medium",
+              "family_friendly": true,
+              "environment": "indoors",
+              "travel_styles": [
+                "family",
+                "couple",
+                "solo"
+              ],
+              "recommended_duration_hours": 4,
+              "best_seasons": [
+                "summer",
+                "spring"
+              ],
+              "tags": [
+                "temppeliaukio_church",
+                "helsinki",
+                "nordic"
+              ],
+              "priority_score": 3,
+              "source_type": "manual",
+              "embedding_text": "Temppeliaukio Church in Helsinki Finland. Nordic travel experience. Category: restaurant."
+            }
+          ]
+        },
+        {
+          "city": "Rovaniemi",
+          "places": [
+            {
+              "id": "finland_rovaniemi_santa_claus_village",
+              "name": "Santa Claus Village",
+              "country": "Finland",
+              "city": "Rovaniemi",
+              "category": "attraction",
+              "subcategories": [
+                "culture",
+                "nature"
+              ],
+              "description": "Santa Claus Village is a popular destination in Rovaniemi, Finland, known for unique Nordic travel experiences.",
+              "budget_level": "medium",
+              "family_friendly": false,
+              "environment": "mixed",
+              "travel_styles": [
+                "family",
+                "couple",
+                "friends"
+              ],
+              "recommended_duration_hours": 2,
+              "best_seasons": [
+                "spring",
+                "all_year"
+              ],
+              "tags": [
+                "santa_claus_village",
+                "rovaniemi",
+                "nordic"
+              ],
+              "priority_score": 3,
+              "source_type": "manual",
+              "embedding_text": "Santa Claus Village in Rovaniemi Finland. Nordic travel experience. Category: attraction."
+            },
+            {
+              "id": "finland_rovaniemi_northern_lights_safari",
+              "name": "Northern Lights Safari",
+              "country": "Finland",
+              "city": "Rovaniemi",
+              "category": "attraction",
+              "subcategories": [
+                "culture",
+                "nature"
+              ],
+              "description": "Northern Lights Safari is a popular destination in Rovaniemi, Finland, known for unique Nordic travel experiences.",
+              "budget_level": "low",
+              "family_friendly": false,
+              "environment": "indoors",
+              "travel_styles": [
+                "family",
+                "friends",
+                "couple"
+              ],
+              "recommended_duration_hours": 1.5,
+              "best_seasons": [
+                "all_year",
+                "spring"
+              ],
+              "tags": [
+                "northern_lights_safari",
+                "rovaniemi",
+                "nordic"
+              ],
+              "priority_score": 3,
+              "source_type": "manual",
+              "embedding_text": "Northern Lights Safari in Rovaniemi Finland. Nordic travel experience. Category: attraction."
+            },
+            {
+              "id": "finland_rovaniemi_husky_safari",
+              "name": "Husky Safari",
+              "country": "Finland",
+              "city": "Rovaniemi",
+              "category": "restaurant",
+              "subcategories": [
+                "food",
+                "casual dining"
+              ],
+              "description": "Husky Safari is a popular destination in Rovaniemi, Finland, known for unique Nordic travel experiences.",
+              "budget_level": "high",
+              "family_friendly": false,
+              "environment": "outdoors",
+              "travel_styles": [
+                "family",
+                "solo",
+                "couple"
+              ],
+              "recommended_duration_hours": 1,
+              "best_seasons": [
+                "all_year",
+                "spring"
+              ],
+              "tags": [
+                "husky_safari",
+                "rovaniemi",
+                "nordic"
+              ],
+              "priority_score": 3,
+              "source_type": "manual",
+              "embedding_text": "Husky Safari in Rovaniemi Finland. Nordic travel experience. Category: restaurant."
+            }
+          ]
+        },
+        {
+          "city": "Turku",
+          "places": [
+            {
+              "id": "finland_turku_turku_castle",
+              "name": "Turku Castle",
+              "country": "Finland",
+              "city": "Turku",
+              "category": "activity",
+              "subcategories": [
+                "culture",
+                "nature"
+              ],
+              "description": "Turku Castle is a popular destination in Turku, Finland, known for unique Nordic travel experiences.",
+              "budget_level": "low",
+              "family_friendly": true,
+              "environment": "indoors",
+              "travel_styles": [
+                "friends",
+                "family",
+                "solo"
+              ],
+              "recommended_duration_hours": 4,
+              "best_seasons": [
+                "winter",
+                "summer"
+              ],
+              "tags": [
+                "turku_castle",
+                "turku",
+                "nordic"
+              ],
+              "priority_score": 1,
+              "source_type": "manual",
+              "embedding_text": "Turku Castle in Turku Finland. Nordic travel experience. Category: activity."
+            },
+            {
+              "id": "finland_turku_aura_river",
+              "name": "Aura River",
+              "country": "Finland",
+              "city": "Turku",
+              "category": "restaurant",
+              "subcategories": [
+                "food",
+                "casual dining"
+              ],
+              "description": "Aura River is a popular destination in Turku, Finland, known for unique Nordic travel experiences.",
+              "budget_level": "high",
+              "family_friendly": true,
+              "environment": "mixed",
+              "travel_styles": [
+                "couple",
+                "solo",
+                "family"
+              ],
+              "recommended_duration_hours": 1,
+              "best_seasons": [
+                "all_year",
+                "winter"
+              ],
+              "tags": [
+                "aura_river",
+                "turku",
+                "nordic"
+              ],
+              "priority_score": 1,
+              "source_type": "manual",
+              "embedding_text": "Aura River in Turku Finland. Nordic travel experience. Category: restaurant."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "country": "Iceland",
+      "cities": [
+        {
+          "city": "Reykjavik",
+          "places": [
+            {
+              "id": "iceland_reykjavik_hallgrímskirkja",
+              "name": "Hallgrímskirkja",
+              "country": "Iceland",
+              "city": "Reykjavik",
+              "category": "restaurant",
+              "subcategories": [
+                "food",
+                "casual dining"
+              ],
+              "description": "Hallgrímskirkja is a popular destination in Reykjavik, Iceland, known for unique Nordic travel experiences.",
+              "budget_level": "medium",
+              "family_friendly": true,
+              "environment": "indoors",
+              "travel_styles": [
+                "family",
+                "friends",
+                "couple"
+              ],
+              "recommended_duration_hours": 1.5,
+              "best_seasons": [
+                "summer",
+                "spring"
+              ],
+              "tags": [
+                "hallgrímskirkja",
+                "reykjavik",
+                "nordic"
+              ],
+              "priority_score": 1,
+              "source_type": "manual",
+              "embedding_text": "Hallgrímskirkja in Reykjavik Iceland. Nordic travel experience. Category: restaurant."
+            },
+            {
+              "id": "iceland_reykjavik_harpa_concert_hall",
+              "name": "Harpa Concert Hall",
+              "country": "Iceland",
+              "city": "Reykjavik",
+              "category": "activity",
+              "subcategories": [
+                "culture",
+                "nature"
+              ],
+              "description": "Harpa Concert Hall is a popular destination in Reykjavik, Iceland, known for unique Nordic travel experiences.",
+              "budget_level": "low",
+              "family_friendly": true,
+              "environment": "outdoors",
+              "travel_styles": [
+                "family",
+                "solo",
+                "friends"
+              ],
+              "recommended_duration_hours": 4,
+              "best_seasons": [
+                "winter",
+                "summer"
+              ],
+              "tags": [
+                "harpa_concert_hall",
+                "reykjavik",
+                "nordic"
+              ],
+              "priority_score": 3,
+              "source_type": "manual",
+              "embedding_text": "Harpa Concert Hall in Reykjavik Iceland. Nordic travel experience. Category: activity."
+            },
+            {
+              "id": "iceland_reykjavik_sky_lagoon",
+              "name": "Sky Lagoon",
+              "country": "Iceland",
+              "city": "Reykjavik",
+              "category": "activity",
+              "subcategories": [
+                "culture",
+                "nature"
+              ],
+              "description": "Sky Lagoon is a popular destination in Reykjavik, Iceland, known for unique Nordic travel experiences.",
+              "budget_level": "high",
+              "family_friendly": true,
+              "environment": "outdoors",
+              "travel_styles": [
+                "friends",
+                "family",
+                "couple"
+              ],
+              "recommended_duration_hours": 2,
+              "best_seasons": [
+                "summer",
+                "spring"
+              ],
+              "tags": [
+                "sky_lagoon",
+                "reykjavik",
+                "nordic"
+              ],
+              "priority_score": 2,
+              "source_type": "manual",
+              "embedding_text": "Sky Lagoon in Reykjavik Iceland. Nordic travel experience. Category: activity."
+            },
+            {
+              "id": "iceland_reykjavik_blue_lagoon",
+              "name": "Blue Lagoon",
+              "country": "Iceland",
+              "city": "Reykjavik",
+              "category": "attraction",
+              "subcategories": [
+                "culture",
+                "nature"
+              ],
+              "description": "Blue Lagoon is a popular destination in Reykjavik, Iceland, known for unique Nordic travel experiences.",
+              "budget_level": "medium",
+              "family_friendly": false,
+              "environment": "mixed",
+              "travel_styles": [
+                "friends",
+                "couple",
+                "family"
+              ],
+              "recommended_duration_hours": 3,
+              "best_seasons": [
+                "all_year",
+                "summer"
+              ],
+              "tags": [
+                "blue_lagoon",
+                "reykjavik",
+                "nordic"
+              ],
+              "priority_score": 1,
+              "source_type": "manual",
+              "embedding_text": "Blue Lagoon in Reykjavik Iceland. Nordic travel experience. Category: attraction."
+            }
+          ]
+        },
+        {
+          "city": "South Coast",
+          "places": [
+            {
+              "id": "iceland_south_coast_seljalandsfoss",
+              "name": "Seljalandsfoss",
+              "country": "Iceland",
+              "city": "South Coast",
+              "category": "restaurant",
+              "subcategories": [
+                "food",
+                "casual dining"
+              ],
+              "description": "Seljalandsfoss is a popular destination in South Coast, Iceland, known for unique Nordic travel experiences.",
+              "budget_level": "low",
+              "family_friendly": false,
+              "environment": "indoors",
+              "travel_styles": [
+                "family",
+                "solo",
+                "couple"
+              ],
+              "recommended_duration_hours": 1,
+              "best_seasons": [
+                "winter",
+                "spring"
+              ],
+              "tags": [
+                "seljalandsfoss",
+                "south_coast",
+                "nordic"
+              ],
+              "priority_score": 2,
+              "source_type": "manual",
+              "embedding_text": "Seljalandsfoss in South Coast Iceland. Nordic travel experience. Category: restaurant."
+            },
+            {
+              "id": "iceland_south_coast_skógafoss",
+              "name": "Skógafoss",
+              "country": "Iceland",
+              "city": "South Coast",
+              "category": "activity",
+              "subcategories": [
+                "culture",
+                "nature"
+              ],
+              "description": "Skógafoss is a popular destination in South Coast, Iceland, known for unique Nordic travel experiences.",
+              "budget_level": "medium",
+              "family_friendly": false,
+              "environment": "mixed",
+              "travel_styles": [
+                "friends",
+                "family",
+                "solo"
+              ],
+              "recommended_duration_hours": 1.5,
+              "best_seasons": [
+                "summer",
+                "spring"
+              ],
+              "tags": [
+                "skógafoss",
+                "south_coast",
+                "nordic"
+              ],
+              "priority_score": 1,
+              "source_type": "manual",
+              "embedding_text": "Skógafoss in South Coast Iceland. Nordic travel experience. Category: activity."
+            },
+            {
+              "id": "iceland_south_coast_reynisfjara_beach",
+              "name": "Reynisfjara Beach",
+              "country": "Iceland",
+              "city": "South Coast",
+              "category": "attraction",
+              "subcategories": [
+                "culture",
+                "nature"
+              ],
+              "description": "Reynisfjara Beach is a popular destination in South Coast, Iceland, known for unique Nordic travel experiences.",
+              "budget_level": "medium",
+              "family_friendly": true,
+              "environment": "outdoors",
+              "travel_styles": [
+                "couple",
+                "solo",
+                "family"
+              ],
+              "recommended_duration_hours": 4,
+              "best_seasons": [
+                "all_year",
+                "winter"
+              ],
+              "tags": [
+                "reynisfjara_beach",
+                "south_coast",
+                "nordic"
+              ],
+              "priority_score": 3,
+              "source_type": "manual",
+              "embedding_text": "Reynisfjara Beach in South Coast Iceland. Nordic travel experience. Category: attraction."
+            }
+          ]
+        },
+        {
+          "city": "Golden Circle",
+          "places": [
+            {
+              "id": "iceland_golden_circle_thingvellir_national_park",
+              "name": "Thingvellir National Park",
+              "country": "Iceland",
+              "city": "Golden Circle",
+              "category": "attraction",
+              "subcategories": [
+                "culture",
+                "nature"
+              ],
+              "description": "Thingvellir National Park is a popular destination in Golden Circle, Iceland, known for unique Nordic travel experiences.",
+              "budget_level": "high",
+              "family_friendly": false,
+              "environment": "mixed",
+              "travel_styles": [
+                "solo",
+                "couple",
+                "family"
+              ],
+              "recommended_duration_hours": 4,
+              "best_seasons": [
+                "all_year",
+                "winter"
+              ],
+              "tags": [
+                "thingvellir_national_park",
+                "golden_circle",
+                "nordic"
+              ],
+              "priority_score": 3,
+              "source_type": "manual",
+              "embedding_text": "Thingvellir National Park in Golden Circle Iceland. Nordic travel experience. Category: attraction."
+            },
+            {
+              "id": "iceland_golden_circle_geysir",
+              "name": "Geysir",
+              "country": "Iceland",
+              "city": "Golden Circle",
+              "category": "restaurant",
+              "subcategories": [
+                "food",
+                "casual dining"
+              ],
+              "description": "Geysir is a popular destination in Golden Circle, Iceland, known for unique Nordic travel experiences.",
+              "budget_level": "high",
+              "family_friendly": true,
+              "environment": "outdoors",
+              "travel_styles": [
+                "couple",
+                "family",
+                "friends"
+              ],
+              "recommended_duration_hours": 4,
+              "best_seasons": [
+                "summer",
+                "spring"
+              ],
+              "tags": [
+                "geysir",
+                "golden_circle",
+                "nordic"
+              ],
+              "priority_score": 2,
+              "source_type": "manual",
+              "embedding_text": "Geysir in Golden Circle Iceland. Nordic travel experience. Category: restaurant."
+            },
+            {
+              "id": "iceland_golden_circle_gullfoss",
+              "name": "Gullfoss",
+              "country": "Iceland",
+              "city": "Golden Circle",
+              "category": "activity",
+              "subcategories": [
+                "culture",
+                "nature"
+              ],
+              "description": "Gullfoss is a popular destination in Golden Circle, Iceland, known for unique Nordic travel experiences.",
+              "budget_level": "medium",
+              "family_friendly": true,
+              "environment": "indoors",
+              "travel_styles": [
+                "family",
+                "couple",
+                "friends"
+              ],
+              "recommended_duration_hours": 3,
+              "best_seasons": [
+                "spring",
+                "autumn"
+              ],
+              "tags": [
+                "gullfoss",
+                "golden_circle",
+                "nordic"
+              ],
+              "priority_score": 2,
+              "source_type": "manual",
+              "embedding_text": "Gullfoss in Golden Circle Iceland. Nordic travel experience. Category: activity."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "places_flat": [
+    {
+      "id": "sweden_stockholm_gamla_stan",
+      "name": "Gamla Stan",
+      "country": "Sweden",
+      "city": "Stockholm",
+      "category": "attraction",
+      "subcategories": [
+        "culture",
+        "nature"
+      ],
+      "description": "Gamla Stan is a popular destination in Stockholm, Sweden, known for unique Nordic travel experiences.",
+      "budget_level": "low",
+      "family_friendly": true,
+      "environment": "indoors",
+      "travel_styles": [
+        "couple",
+        "friends",
+        "family"
+      ],
+      "recommended_duration_hours": 2,
+      "best_seasons": [
+        "winter",
+        "all_year"
+      ],
+      "tags": [
+        "gamla_stan",
+        "stockholm",
+        "nordic"
+      ],
+      "priority_score": 3,
+      "source_type": "manual",
+      "embedding_text": "Gamla Stan in Stockholm Sweden. Nordic travel experience. Category: attraction."
+    },
+    {
+      "id": "sweden_stockholm_vasa_museum",
+      "name": "Vasa Museum",
+      "country": "Sweden",
+      "city": "Stockholm",
+      "category": "activity",
+      "subcategories": [
+        "culture",
+        "nature"
+      ],
+      "description": "Vasa Museum is a popular destination in Stockholm, Sweden, known for unique Nordic travel experiences.",
+      "budget_level": "high",
+      "family_friendly": true,
+      "environment": "outdoors",
+      "travel_styles": [
+        "friends",
+        "solo",
+        "family"
+      ],
+      "recommended_duration_hours": 3,
+      "best_seasons": [
+        "all_year",
+        "autumn"
+      ],
+      "tags": [
+        "vasa_museum",
+        "stockholm",
+        "nordic"
+      ],
+      "priority_score": 2,
+      "source_type": "manual",
+      "embedding_text": "Vasa Museum in Stockholm Sweden. Nordic travel experience. Category: activity."
+    },
+    {
+      "id": "sweden_stockholm_skansen",
+      "name": "Skansen",
+      "country": "Sweden",
+      "city": "Stockholm",
+      "category": "attraction",
+      "subcategories": [
+        "culture",
+        "nature"
+      ],
+      "description": "Skansen is a popular destination in Stockholm, Sweden, known for unique Nordic travel experiences.",
+      "budget_level": "medium",
+      "family_friendly": false,
+      "environment": "outdoors",
+      "travel_styles": [
+        "solo",
+        "family",
+        "couple"
+      ],
+      "recommended_duration_hours": 1.5,
+      "best_seasons": [
+        "spring",
+        "winter"
+      ],
+      "tags": [
+        "skansen",
+        "stockholm",
+        "nordic"
+      ],
+      "priority_score": 2,
+      "source_type": "manual",
+      "embedding_text": "Skansen in Stockholm Sweden. Nordic travel experience. Category: attraction."
+    },
+    {
+      "id": "sweden_stockholm_fotografiska",
+      "name": "Fotografiska",
+      "country": "Sweden",
+      "city": "Stockholm",
+      "category": "attraction",
+      "subcategories": [
+        "culture",
+        "nature"
+      ],
+      "description": "Fotografiska is a popular destination in Stockholm, Sweden, known for unique Nordic travel experiences.",
+      "budget_level": "high",
+      "family_friendly": true,
+      "environment": "outdoors",
+      "travel_styles": [
+        "solo",
+        "family",
+        "couple"
+      ],
+      "recommended_duration_hours": 3,
+      "best_seasons": [
+        "winter",
+        "autumn"
+      ],
+      "tags": [
+        "fotografiska",
+        "stockholm",
+        "nordic"
+      ],
+      "priority_score": 3,
+      "source_type": "manual",
+      "embedding_text": "Fotografiska in Stockholm Sweden. Nordic travel experience. Category: attraction."
+    },
+    {
+      "id": "sweden_stockholm_abba_museum",
+      "name": "ABBA Museum",
+      "country": "Sweden",
+      "city": "Stockholm",
+      "category": "restaurant",
+      "subcategories": [
+        "food",
+        "casual dining"
+      ],
+      "description": "ABBA Museum is a popular destination in Stockholm, Sweden, known for unique Nordic travel experiences.",
+      "budget_level": "high",
+      "family_friendly": true,
+      "environment": "indoors",
+      "travel_styles": [
+        "solo",
+        "friends",
+        "couple"
+      ],
+      "recommended_duration_hours": 3,
+      "best_seasons": [
+        "autumn",
+        "spring"
+      ],
+      "tags": [
+        "abba_museum",
+        "stockholm",
+        "nordic"
+      ],
+      "priority_score": 3,
+      "source_type": "manual",
+      "embedding_text": "ABBA Museum in Stockholm Sweden. Nordic travel experience. Category: restaurant."
+    },
+    {
+      "id": "sweden_gothenburg_liseberg",
+      "name": "Liseberg",
+      "country": "Sweden",
+      "city": "Gothenburg",
+      "category": "restaurant",
+      "subcategories": [
+        "food",
+        "casual dining"
+      ],
+      "description": "Liseberg is a popular destination in Gothenburg, Sweden, known for unique Nordic travel experiences.",
+      "budget_level": "low",
+      "family_friendly": false,
+      "environment": "indoors",
+      "travel_styles": [
+        "solo",
+        "family",
+        "couple"
+      ],
+      "recommended_duration_hours": 3,
+      "best_seasons": [
+        "spring",
+        "winter"
+      ],
+      "tags": [
+        "liseberg",
+        "gothenburg",
+        "nordic"
+      ],
+      "priority_score": 2,
+      "source_type": "manual",
+      "embedding_text": "Liseberg in Gothenburg Sweden. Nordic travel experience. Category: restaurant."
+    },
+    {
+      "id": "sweden_gothenburg_haga",
+      "name": "Haga",
+      "country": "Sweden",
+      "city": "Gothenburg",
+      "category": "restaurant",
+      "subcategories": [
+        "food",
+        "casual dining"
+      ],
+      "description": "Haga is a popular destination in Gothenburg, Sweden, known for unique Nordic travel experiences.",
+      "budget_level": "low",
+      "family_friendly": false,
+      "environment": "mixed",
+      "travel_styles": [
+        "solo",
+        "couple",
+        "family"
+      ],
+      "recommended_duration_hours": 4,
+      "best_seasons": [
+        "spring",
+        "all_year"
+      ],
+      "tags": [
+        "haga",
+        "gothenburg",
+        "nordic"
+      ],
+      "priority_score": 2,
+      "source_type": "manual",
+      "embedding_text": "Haga in Gothenburg Sweden. Nordic travel experience. Category: restaurant."
+    },
+    {
+      "id": "sweden_gothenburg_universeum",
+      "name": "Universeum",
+      "country": "Sweden",
+      "city": "Gothenburg",
+      "category": "restaurant",
+      "subcategories": [
+        "food",
+        "casual dining"
+      ],
+      "description": "Universeum is a popular destination in Gothenburg, Sweden, known for unique Nordic travel experiences.",
+      "budget_level": "low",
+      "family_friendly": false,
+      "environment": "mixed",
+      "travel_styles": [
+        "couple",
+        "family",
+        "friends"
+      ],
+      "recommended_duration_hours": 3,
+      "best_seasons": [
+        "spring",
+        "autumn"
+      ],
+      "tags": [
+        "universeum",
+        "gothenburg",
+        "nordic"
+      ],
+      "priority_score": 2,
+      "source_type": "manual",
+      "embedding_text": "Universeum in Gothenburg Sweden. Nordic travel experience. Category: restaurant."
+    },
+    {
+      "id": "sweden_gothenburg_archipelago_tour",
+      "name": "Archipelago Tour",
+      "country": "Sweden",
+      "city": "Gothenburg",
+      "category": "attraction",
+      "subcategories": [
+        "culture",
+        "nature"
+      ],
+      "description": "Archipelago Tour is a popular destination in Gothenburg, Sweden, known for unique Nordic travel experiences.",
+      "budget_level": "high",
+      "family_friendly": false,
+      "environment": "mixed",
+      "travel_styles": [
+        "family",
+        "solo",
+        "friends"
+      ],
+      "recommended_duration_hours": 3,
+      "best_seasons": [
+        "all_year",
+        "winter"
+      ],
+      "tags": [
+        "archipelago_tour",
+        "gothenburg",
+        "nordic"
+      ],
+      "priority_score": 3,
+      "source_type": "manual",
+      "embedding_text": "Archipelago Tour in Gothenburg Sweden. Nordic travel experience. Category: attraction."
+    },
+    {
+      "id": "sweden_malmo_turning_torso",
+      "name": "Turning Torso",
+      "country": "Sweden",
+      "city": "Malmö",
+      "category": "restaurant",
+      "subcategories": [
+        "food",
+        "casual dining"
+      ],
+      "description": "Turning Torso is a popular destination in Malmö, Sweden, known for unique Nordic travel experiences.",
+      "budget_level": "medium",
+      "family_friendly": true,
+      "environment": "mixed",
+      "travel_styles": [
+        "family",
+        "solo",
+        "friends"
+      ],
+      "recommended_duration_hours": 4,
+      "best_seasons": [
+        "autumn",
+        "summer"
+      ],
+      "tags": [
+        "turning_torso",
+        "malmo",
+        "nordic"
+      ],
+      "priority_score": 1,
+      "source_type": "manual",
+      "embedding_text": "Turning Torso in Malmö Sweden. Nordic travel experience. Category: restaurant."
+    },
+    {
+      "id": "sweden_malmo_ribersborg_beach",
+      "name": "Ribersborg Beach",
+      "country": "Sweden",
+      "city": "Malmö",
+      "category": "restaurant",
+      "subcategories": [
+        "food",
+        "casual dining"
+      ],
+      "description": "Ribersborg Beach is a popular destination in Malmö, Sweden, known for unique Nordic travel experiences.",
+      "budget_level": "low",
+      "family_friendly": true,
+      "environment": "outdoors",
+      "travel_styles": [
+        "couple",
+        "friends",
+        "family"
+      ],
+      "recommended_duration_hours": 3,
+      "best_seasons": [
+        "winter",
+        "autumn"
+      ],
+      "tags": [
+        "ribersborg_beach",
+        "malmo",
+        "nordic"
+      ],
+      "priority_score": 2,
+      "source_type": "manual",
+      "embedding_text": "Ribersborg Beach in Malmö Sweden. Nordic travel experience. Category: restaurant."
+    },
+    {
+      "id": "sweden_malmo_malmo_castle",
+      "name": "Malmö Castle",
+      "country": "Sweden",
+      "city": "Malmö",
+      "category": "restaurant",
+      "subcategories": [
+        "food",
+        "casual dining"
+      ],
+      "description": "Malmö Castle is a popular destination in Malmö, Sweden, known for unique Nordic travel experiences.",
+      "budget_level": "medium",
+      "family_friendly": true,
+      "environment": "outdoors",
+      "travel_styles": [
+        "friends",
+        "family",
+        "solo"
+      ],
+      "recommended_duration_hours": 1,
+      "best_seasons": [
+        "autumn",
+        "all_year"
+      ],
+      "tags": [
+        "malmo_castle",
+        "malmo",
+        "nordic"
+      ],
+      "priority_score": 3,
+      "source_type": "manual",
+      "embedding_text": "Malmö Castle in Malmö Sweden. Nordic travel experience. Category: restaurant."
+    },
+    {
+      "id": "norway_oslo_vigeland_park",
+      "name": "Vigeland Park",
+      "country": "Norway",
+      "city": "Oslo",
+      "category": "attraction",
+      "subcategories": [
+        "culture",
+        "nature"
+      ],
+      "description": "Vigeland Park is a popular destination in Oslo, Norway, known for unique Nordic travel experiences.",
+      "budget_level": "medium",
+      "family_friendly": false,
+      "environment": "mixed",
+      "travel_styles": [
+        "friends",
+        "family",
+        "solo"
+      ],
+      "recommended_duration_hours": 2,
+      "best_seasons": [
+        "summer",
+        "winter"
+      ],
+      "tags": [
+        "vigeland_park",
+        "oslo",
+        "nordic"
+      ],
+      "priority_score": 2,
+      "source_type": "manual",
+      "embedding_text": "Vigeland Park in Oslo Norway. Nordic travel experience. Category: attraction."
+    },
+    {
+      "id": "norway_oslo_munch",
+      "name": "MUNCH",
+      "country": "Norway",
+      "city": "Oslo",
+      "category": "activity",
+      "subcategories": [
+        "culture",
+        "nature"
+      ],
+      "description": "MUNCH is a popular destination in Oslo, Norway, known for unique Nordic travel experiences.",
+      "budget_level": "medium",
+      "family_friendly": true,
+      "environment": "mixed",
+      "travel_styles": [
+        "couple",
+        "friends",
+        "solo"
+      ],
+      "recommended_duration_hours": 3,
+      "best_seasons": [
+        "all_year",
+        "autumn"
+      ],
+      "tags": [
+        "munch",
+        "oslo",
+        "nordic"
+      ],
+      "priority_score": 1,
+      "source_type": "manual",
+      "embedding_text": "MUNCH in Oslo Norway. Nordic travel experience. Category: activity."
+    },
+    {
+      "id": "norway_oslo_oslo_opera_house",
+      "name": "Oslo Opera House",
+      "country": "Norway",
+      "city": "Oslo",
+      "category": "attraction",
+      "subcategories": [
+        "culture",
+        "nature"
+      ],
+      "description": "Oslo Opera House is a popular destination in Oslo, Norway, known for unique Nordic travel experiences.",
+      "budget_level": "medium",
+      "family_friendly": false,
+      "environment": "mixed",
+      "travel_styles": [
+        "friends",
+        "solo",
+        "family"
+      ],
+      "recommended_duration_hours": 1,
+      "best_seasons": [
+        "all_year",
+        "winter"
+      ],
+      "tags": [
+        "oslo_opera_house",
+        "oslo",
+        "nordic"
+      ],
+      "priority_score": 2,
+      "source_type": "manual",
+      "embedding_text": "Oslo Opera House in Oslo Norway. Nordic travel experience. Category: attraction."
+    },
+    {
+      "id": "norway_oslo_fjord_cruise",
+      "name": "Fjord Cruise",
+      "country": "Norway",
+      "city": "Oslo",
+      "category": "activity",
+      "subcategories": [
+        "culture",
+        "nature"
+      ],
+      "description": "Fjord Cruise is a popular destination in Oslo, Norway, known for unique Nordic travel experiences.",
+      "budget_level": "medium",
+      "family_friendly": false,
+      "environment": "indoors",
+      "travel_styles": [
+        "family",
+        "solo",
+        "friends"
+      ],
+      "recommended_duration_hours": 2,
+      "best_seasons": [
+        "all_year",
+        "winter"
+      ],
+      "tags": [
+        "fjord_cruise",
+        "oslo",
+        "nordic"
+      ],
+      "priority_score": 3,
+      "source_type": "manual",
+      "embedding_text": "Fjord Cruise in Oslo Norway. Nordic travel experience. Category: activity."
+    },
+    {
+      "id": "norway_bergen_bryggen",
+      "name": "Bryggen",
+      "country": "Norway",
+      "city": "Bergen",
+      "category": "attraction",
+      "subcategories": [
+        "culture",
+        "nature"
+      ],
+      "description": "Bryggen is a popular destination in Bergen, Norway, known for unique Nordic travel experiences.",
+      "budget_level": "high",
+      "family_friendly": true,
+      "environment": "indoors",
+      "travel_styles": [
+        "family",
+        "solo",
+        "friends"
+      ],
+      "recommended_duration_hours": 1,
+      "best_seasons": [
+        "spring",
+        "autumn"
+      ],
+      "tags": [
+        "bryggen",
+        "bergen",
+        "nordic"
+      ],
+      "priority_score": 1,
+      "source_type": "manual",
+      "embedding_text": "Bryggen in Bergen Norway. Nordic travel experience. Category: attraction."
+    },
+    {
+      "id": "norway_bergen_floibanen",
+      "name": "Fløibanen",
+      "country": "Norway",
+      "city": "Bergen",
+      "category": "activity",
+      "subcategories": [
+        "culture",
+        "nature"
+      ],
+      "description": "Fløibanen is a popular destination in Bergen, Norway, known for unique Nordic travel experiences.",
+      "budget_level": "low",
+      "family_friendly": true,
+      "environment": "indoors",
+      "travel_styles": [
+        "solo",
+        "friends",
+        "family"
+      ],
+      "recommended_duration_hours": 1.5,
+      "best_seasons": [
+        "winter",
+        "all_year"
+      ],
+      "tags": [
+        "floibanen",
+        "bergen",
+        "nordic"
+      ],
+      "priority_score": 1,
+      "source_type": "manual",
+      "embedding_text": "Fløibanen in Bergen Norway. Nordic travel experience. Category: activity."
+    },
+    {
+      "id": "norway_bergen_fish_market",
+      "name": "Fish Market",
+      "country": "Norway",
+      "city": "Bergen",
+      "category": "activity",
+      "subcategories": [
+        "culture",
+        "nature"
+      ],
+      "description": "Fish Market is a popular destination in Bergen, Norway, known for unique Nordic travel experiences.",
+      "budget_level": "low",
+      "family_friendly": false,
+      "environment": "indoors",
+      "travel_styles": [
+        "family",
+        "friends",
+        "couple"
+      ],
+      "recommended_duration_hours": 3,
+      "best_seasons": [
+        "autumn",
+        "winter"
+      ],
+      "tags": [
+        "fish_market",
+        "bergen",
+        "nordic"
+      ],
+      "priority_score": 2,
+      "source_type": "manual",
+      "embedding_text": "Fish Market in Bergen Norway. Nordic travel experience. Category: activity."
+    },
+    {
+      "id": "norway_tromso_northern_lights_tour",
+      "name": "Northern Lights Tour",
+      "country": "Norway",
+      "city": "Tromsø",
+      "category": "activity",
+      "subcategories": [
+        "culture",
+        "nature"
+      ],
+      "description": "Northern Lights Tour is a popular destination in Tromsø, Norway, known for unique Nordic travel experiences.",
+      "budget_level": "medium",
+      "family_friendly": true,
+      "environment": "mixed",
+      "travel_styles": [
+        "friends",
+        "solo",
+        "family"
+      ],
+      "recommended_duration_hours": 1,
+      "best_seasons": [
+        "all_year",
+        "winter"
+      ],
+      "tags": [
+        "northern_lights_tour",
+        "tromso",
+        "nordic"
+      ],
+      "priority_score": 2,
+      "source_type": "manual",
+      "embedding_text": "Northern Lights Tour in Tromsø Norway. Nordic travel experience. Category: activity."
+    },
+    {
+      "id": "norway_tromso_arctic_cathedral",
+      "name": "Arctic Cathedral",
+      "country": "Norway",
+      "city": "Tromsø",
+      "category": "attraction",
+      "subcategories": [
+        "culture",
+        "nature"
+      ],
+      "description": "Arctic Cathedral is a popular destination in Tromsø, Norway, known for unique Nordic travel experiences.",
+      "budget_level": "medium",
+      "family_friendly": false,
+      "environment": "outdoors",
+      "travel_styles": [
+        "couple",
+        "solo",
+        "family"
+      ],
+      "recommended_duration_hours": 1,
+      "best_seasons": [
+        "autumn",
+        "spring"
+      ],
+      "tags": [
+        "arctic_cathedral",
+        "tromso",
+        "nordic"
+      ],
+      "priority_score": 3,
+      "source_type": "manual",
+      "embedding_text": "Arctic Cathedral in Tromsø Norway. Nordic travel experience. Category: attraction."
+    },
+    {
+      "id": "norway_tromso_whale_safari",
+      "name": "Whale Safari",
+      "country": "Norway",
+      "city": "Tromsø",
+      "category": "restaurant",
+      "subcategories": [
+        "food",
+        "casual dining"
+      ],
+      "description": "Whale Safari is a popular destination in Tromsø, Norway, known for unique Nordic travel experiences.",
+      "budget_level": "medium",
+      "family_friendly": false,
+      "environment": "outdoors",
+      "travel_styles": [
+        "friends",
+        "solo",
+        "family"
+      ],
+      "recommended_duration_hours": 4,
+      "best_seasons": [
+        "summer",
+        "winter"
+      ],
+      "tags": [
+        "whale_safari",
+        "tromso",
+        "nordic"
+      ],
+      "priority_score": 2,
+      "source_type": "manual",
+      "embedding_text": "Whale Safari in Tromsø Norway. Nordic travel experience. Category: restaurant."
+    },
+    {
+      "id": "denmark_copenhagen_nyhavn",
+      "name": "Nyhavn",
+      "country": "Denmark",
+      "city": "Copenhagen",
+      "category": "attraction",
+      "subcategories": [
+        "culture",
+        "nature"
+      ],
+      "description": "Nyhavn is a popular destination in Copenhagen, Denmark, known for unique Nordic travel experiences.",
+      "budget_level": "low",
+      "family_friendly": false,
+      "environment": "outdoors",
+      "travel_styles": [
+        "friends",
+        "solo",
+        "family"
+      ],
+      "recommended_duration_hours": 1,
+      "best_seasons": [
+        "winter",
+        "summer"
+      ],
+      "tags": [
+        "nyhavn",
+        "copenhagen",
+        "nordic"
+      ],
+      "priority_score": 1,
+      "source_type": "manual",
+      "embedding_text": "Nyhavn in Copenhagen Denmark. Nordic travel experience. Category: attraction."
+    },
+    {
+      "id": "denmark_copenhagen_tivoli_gardens",
+      "name": "Tivoli Gardens",
+      "country": "Denmark",
+      "city": "Copenhagen",
+      "category": "activity",
+      "subcategories": [
+        "culture",
+        "nature"
+      ],
+      "description": "Tivoli Gardens is a popular destination in Copenhagen, Denmark, known for unique Nordic travel experiences.",
+      "budget_level": "high",
+      "family_friendly": false,
+      "environment": "outdoors",
+      "travel_styles": [
+        "family",
+        "solo",
+        "friends"
+      ],
+      "recommended_duration_hours": 1.5,
+      "best_seasons": [
+        "spring",
+        "all_year"
+      ],
+      "tags": [
+        "tivoli_gardens",
+        "copenhagen",
+        "nordic"
+      ],
+      "priority_score": 1,
+      "source_type": "manual",
+      "embedding_text": "Tivoli Gardens in Copenhagen Denmark. Nordic travel experience. Category: activity."
+    },
+    {
+      "id": "denmark_copenhagen_the_little_mermaid",
+      "name": "The Little Mermaid",
+      "country": "Denmark",
+      "city": "Copenhagen",
+      "category": "restaurant",
+      "subcategories": [
+        "food",
+        "casual dining"
+      ],
+      "description": "The Little Mermaid is a popular destination in Copenhagen, Denmark, known for unique Nordic travel experiences.",
+      "budget_level": "low",
+      "family_friendly": true,
+      "environment": "indoors",
+      "travel_styles": [
+        "couple",
+        "friends",
+        "family"
+      ],
+      "recommended_duration_hours": 1.5,
+      "best_seasons": [
+        "autumn",
+        "all_year"
+      ],
+      "tags": [
+        "the_little_mermaid",
+        "copenhagen",
+        "nordic"
+      ],
+      "priority_score": 2,
+      "source_type": "manual",
+      "embedding_text": "The Little Mermaid in Copenhagen Denmark. Nordic travel experience. Category: restaurant."
+    },
+    {
+      "id": "denmark_copenhagen_street_food_market",
+      "name": "Street Food Market",
+      "country": "Denmark",
+      "city": "Copenhagen",
+      "category": "restaurant",
+      "subcategories": [
+        "food",
+        "casual dining"
+      ],
+      "description": "Street Food Market is a popular destination in Copenhagen, Denmark, known for unique Nordic travel experiences.",
+      "budget_level": "medium",
+      "family_friendly": true,
+      "environment": "outdoors",
+      "travel_styles": [
+        "friends",
+        "family",
+        "couple"
+      ],
+      "recommended_duration_hours": 1,
+      "best_seasons": [
+        "summer",
+        "spring"
+      ],
+      "tags": [
+        "street_food_market",
+        "copenhagen",
+        "nordic"
+      ],
+      "priority_score": 1,
+      "source_type": "manual",
+      "embedding_text": "Street Food Market in Copenhagen Denmark. Nordic travel experience. Category: restaurant."
+    },
+    {
+      "id": "denmark_aarhus_aros_museum",
+      "name": "ARoS Museum",
+      "country": "Denmark",
+      "city": "Aarhus",
+      "category": "restaurant",
+      "subcategories": [
+        "food",
+        "casual dining"
+      ],
+      "description": "ARoS Museum is a popular destination in Aarhus, Denmark, known for unique Nordic travel experiences.",
+      "budget_level": "low",
+      "family_friendly": false,
+      "environment": "indoors",
+      "travel_styles": [
+        "solo",
+        "couple",
+        "friends"
+      ],
+      "recommended_duration_hours": 2,
+      "best_seasons": [
+        "autumn",
+        "winter"
+      ],
+      "tags": [
+        "aros_museum",
+        "aarhus",
+        "nordic"
+      ],
+      "priority_score": 2,
+      "source_type": "manual",
+      "embedding_text": "ARoS Museum in Aarhus Denmark. Nordic travel experience. Category: restaurant."
+    },
+    {
+      "id": "denmark_aarhus_den_gamle_by",
+      "name": "Den Gamle By",
+      "country": "Denmark",
+      "city": "Aarhus",
+      "category": "activity",
+      "subcategories": [
+        "culture",
+        "nature"
+      ],
+      "description": "Den Gamle By is a popular destination in Aarhus, Denmark, known for unique Nordic travel experiences.",
+      "budget_level": "high",
+      "family_friendly": false,
+      "environment": "outdoors",
+      "travel_styles": [
+        "couple",
+        "solo",
+        "friends"
+      ],
+      "recommended_duration_hours": 1.5,
+      "best_seasons": [
+        "spring",
+        "summer"
+      ],
+      "tags": [
+        "den_gamle_by",
+        "aarhus",
+        "nordic"
+      ],
+      "priority_score": 3,
+      "source_type": "manual",
+      "embedding_text": "Den Gamle By in Aarhus Denmark. Nordic travel experience. Category: activity."
+    },
+    {
+      "id": "denmark_aarhus_latin_quarter",
+      "name": "Latin Quarter",
+      "country": "Denmark",
+      "city": "Aarhus",
+      "category": "activity",
+      "subcategories": [
+        "culture",
+        "nature"
+      ],
+      "description": "Latin Quarter is a popular destination in Aarhus, Denmark, known for unique Nordic travel experiences.",
+      "budget_level": "medium",
+      "family_friendly": false,
+      "environment": "mixed",
+      "travel_styles": [
+        "solo",
+        "family",
+        "friends"
+      ],
+      "recommended_duration_hours": 1,
+      "best_seasons": [
+        "spring",
+        "autumn"
+      ],
+      "tags": [
+        "latin_quarter",
+        "aarhus",
+        "nordic"
+      ],
+      "priority_score": 3,
+      "source_type": "manual",
+      "embedding_text": "Latin Quarter in Aarhus Denmark. Nordic travel experience. Category: activity."
+    },
+    {
+      "id": "denmark_odense_hans_christian_andersen_museum",
+      "name": "Hans Christian Andersen Museum",
+      "country": "Denmark",
+      "city": "Odense",
+      "category": "restaurant",
+      "subcategories": [
+        "food",
+        "casual dining"
+      ],
+      "description": "Hans Christian Andersen Museum is a popular destination in Odense, Denmark, known for unique Nordic travel experiences.",
+      "budget_level": "high",
+      "family_friendly": true,
+      "environment": "indoors",
+      "travel_styles": [
+        "couple",
+        "solo",
+        "friends"
+      ],
+      "recommended_duration_hours": 1,
+      "best_seasons": [
+        "winter",
+        "summer"
+      ],
+      "tags": [
+        "hans_christian_andersen_museum",
+        "odense",
+        "nordic"
+      ],
+      "priority_score": 1,
+      "source_type": "manual",
+      "embedding_text": "Hans Christian Andersen Museum in Odense Denmark. Nordic travel experience. Category: restaurant."
+    },
+    {
+      "id": "denmark_odense_odense_zoo",
+      "name": "Odense Zoo",
+      "country": "Denmark",
+      "city": "Odense",
+      "category": "attraction",
+      "subcategories": [
+        "culture",
+        "nature"
+      ],
+      "description": "Odense Zoo is a popular destination in Odense, Denmark, known for unique Nordic travel experiences.",
+      "budget_level": "medium",
+      "family_friendly": true,
+      "environment": "mixed",
+      "travel_styles": [
+        "family",
+        "solo",
+        "couple"
+      ],
+      "recommended_duration_hours": 1.5,
+      "best_seasons": [
+        "summer",
+        "all_year"
+      ],
+      "tags": [
+        "odense_zoo",
+        "odense",
+        "nordic"
+      ],
+      "priority_score": 2,
+      "source_type": "manual",
+      "embedding_text": "Odense Zoo in Odense Denmark. Nordic travel experience. Category: attraction."
+    },
+    {
+      "id": "finland_helsinki_suomenlinna",
+      "name": "Suomenlinna",
+      "country": "Finland",
+      "city": "Helsinki",
+      "category": "activity",
+      "subcategories": [
+        "culture",
+        "nature"
+      ],
+      "description": "Suomenlinna is a popular destination in Helsinki, Finland, known for unique Nordic travel experiences.",
+      "budget_level": "low",
+      "family_friendly": false,
+      "environment": "outdoors",
+      "travel_styles": [
+        "couple",
+        "solo",
+        "family"
+      ],
+      "recommended_duration_hours": 2,
+      "best_seasons": [
+        "all_year",
+        "winter"
+      ],
+      "tags": [
+        "suomenlinna",
+        "helsinki",
+        "nordic"
+      ],
+      "priority_score": 1,
+      "source_type": "manual",
+      "embedding_text": "Suomenlinna in Helsinki Finland. Nordic travel experience. Category: activity."
+    },
+    {
+      "id": "finland_helsinki_market_square",
+      "name": "Market Square",
+      "country": "Finland",
+      "city": "Helsinki",
+      "category": "attraction",
+      "subcategories": [
+        "culture",
+        "nature"
+      ],
+      "description": "Market Square is a popular destination in Helsinki, Finland, known for unique Nordic travel experiences.",
+      "budget_level": "medium",
+      "family_friendly": true,
+      "environment": "outdoors",
+      "travel_styles": [
+        "couple",
+        "friends",
+        "solo"
+      ],
+      "recommended_duration_hours": 2,
+      "best_seasons": [
+        "summer",
+        "all_year"
+      ],
+      "tags": [
+        "market_square",
+        "helsinki",
+        "nordic"
+      ],
+      "priority_score": 2,
+      "source_type": "manual",
+      "embedding_text": "Market Square in Helsinki Finland. Nordic travel experience. Category: attraction."
+    },
+    {
+      "id": "finland_helsinki_temppeliaukio_church",
+      "name": "Temppeliaukio Church",
+      "country": "Finland",
+      "city": "Helsinki",
+      "category": "restaurant",
+      "subcategories": [
+        "food",
+        "casual dining"
+      ],
+      "description": "Temppeliaukio Church is a popular destination in Helsinki, Finland, known for unique Nordic travel experiences.",
+      "budget_level": "medium",
+      "family_friendly": true,
+      "environment": "indoors",
+      "travel_styles": [
+        "family",
+        "couple",
+        "solo"
+      ],
+      "recommended_duration_hours": 4,
+      "best_seasons": [
+        "summer",
+        "spring"
+      ],
+      "tags": [
+        "temppeliaukio_church",
+        "helsinki",
+        "nordic"
+      ],
+      "priority_score": 3,
+      "source_type": "manual",
+      "embedding_text": "Temppeliaukio Church in Helsinki Finland. Nordic travel experience. Category: restaurant."
+    },
+    {
+      "id": "finland_rovaniemi_santa_claus_village",
+      "name": "Santa Claus Village",
+      "country": "Finland",
+      "city": "Rovaniemi",
+      "category": "attraction",
+      "subcategories": [
+        "culture",
+        "nature"
+      ],
+      "description": "Santa Claus Village is a popular destination in Rovaniemi, Finland, known for unique Nordic travel experiences.",
+      "budget_level": "medium",
+      "family_friendly": false,
+      "environment": "mixed",
+      "travel_styles": [
+        "family",
+        "couple",
+        "friends"
+      ],
+      "recommended_duration_hours": 2,
+      "best_seasons": [
+        "spring",
+        "all_year"
+      ],
+      "tags": [
+        "santa_claus_village",
+        "rovaniemi",
+        "nordic"
+      ],
+      "priority_score": 3,
+      "source_type": "manual",
+      "embedding_text": "Santa Claus Village in Rovaniemi Finland. Nordic travel experience. Category: attraction."
+    },
+    {
+      "id": "finland_rovaniemi_northern_lights_safari",
+      "name": "Northern Lights Safari",
+      "country": "Finland",
+      "city": "Rovaniemi",
+      "category": "attraction",
+      "subcategories": [
+        "culture",
+        "nature"
+      ],
+      "description": "Northern Lights Safari is a popular destination in Rovaniemi, Finland, known for unique Nordic travel experiences.",
+      "budget_level": "low",
+      "family_friendly": false,
+      "environment": "indoors",
+      "travel_styles": [
+        "family",
+        "friends",
+        "couple"
+      ],
+      "recommended_duration_hours": 1.5,
+      "best_seasons": [
+        "all_year",
+        "spring"
+      ],
+      "tags": [
+        "northern_lights_safari",
+        "rovaniemi",
+        "nordic"
+      ],
+      "priority_score": 3,
+      "source_type": "manual",
+      "embedding_text": "Northern Lights Safari in Rovaniemi Finland. Nordic travel experience. Category: attraction."
+    },
+    {
+      "id": "finland_rovaniemi_husky_safari",
+      "name": "Husky Safari",
+      "country": "Finland",
+      "city": "Rovaniemi",
+      "category": "restaurant",
+      "subcategories": [
+        "food",
+        "casual dining"
+      ],
+      "description": "Husky Safari is a popular destination in Rovaniemi, Finland, known for unique Nordic travel experiences.",
+      "budget_level": "high",
+      "family_friendly": false,
+      "environment": "outdoors",
+      "travel_styles": [
+        "family",
+        "solo",
+        "couple"
+      ],
+      "recommended_duration_hours": 1,
+      "best_seasons": [
+        "all_year",
+        "spring"
+      ],
+      "tags": [
+        "husky_safari",
+        "rovaniemi",
+        "nordic"
+      ],
+      "priority_score": 3,
+      "source_type": "manual",
+      "embedding_text": "Husky Safari in Rovaniemi Finland. Nordic travel experience. Category: restaurant."
+    },
+    {
+      "id": "finland_turku_turku_castle",
+      "name": "Turku Castle",
+      "country": "Finland",
+      "city": "Turku",
+      "category": "activity",
+      "subcategories": [
+        "culture",
+        "nature"
+      ],
+      "description": "Turku Castle is a popular destination in Turku, Finland, known for unique Nordic travel experiences.",
+      "budget_level": "low",
+      "family_friendly": true,
+      "environment": "indoors",
+      "travel_styles": [
+        "friends",
+        "family",
+        "solo"
+      ],
+      "recommended_duration_hours": 4,
+      "best_seasons": [
+        "winter",
+        "summer"
+      ],
+      "tags": [
+        "turku_castle",
+        "turku",
+        "nordic"
+      ],
+      "priority_score": 1,
+      "source_type": "manual",
+      "embedding_text": "Turku Castle in Turku Finland. Nordic travel experience. Category: activity."
+    },
+    {
+      "id": "finland_turku_aura_river",
+      "name": "Aura River",
+      "country": "Finland",
+      "city": "Turku",
+      "category": "restaurant",
+      "subcategories": [
+        "food",
+        "casual dining"
+      ],
+      "description": "Aura River is a popular destination in Turku, Finland, known for unique Nordic travel experiences.",
+      "budget_level": "high",
+      "family_friendly": true,
+      "environment": "mixed",
+      "travel_styles": [
+        "couple",
+        "solo",
+        "family"
+      ],
+      "recommended_duration_hours": 1,
+      "best_seasons": [
+        "all_year",
+        "winter"
+      ],
+      "tags": [
+        "aura_river",
+        "turku",
+        "nordic"
+      ],
+      "priority_score": 1,
+      "source_type": "manual",
+      "embedding_text": "Aura River in Turku Finland. Nordic travel experience. Category: restaurant."
+    },
+    {
+      "id": "iceland_reykjavik_hallgrímskirkja",
+      "name": "Hallgrímskirkja",
+      "country": "Iceland",
+      "city": "Reykjavik",
+      "category": "restaurant",
+      "subcategories": [
+        "food",
+        "casual dining"
+      ],
+      "description": "Hallgrímskirkja is a popular destination in Reykjavik, Iceland, known for unique Nordic travel experiences.",
+      "budget_level": "medium",
+      "family_friendly": true,
+      "environment": "indoors",
+      "travel_styles": [
+        "family",
+        "friends",
+        "couple"
+      ],
+      "recommended_duration_hours": 1.5,
+      "best_seasons": [
+        "summer",
+        "spring"
+      ],
+      "tags": [
+        "hallgrímskirkja",
+        "reykjavik",
+        "nordic"
+      ],
+      "priority_score": 1,
+      "source_type": "manual",
+      "embedding_text": "Hallgrímskirkja in Reykjavik Iceland. Nordic travel experience. Category: restaurant."
+    },
+    {
+      "id": "iceland_reykjavik_harpa_concert_hall",
+      "name": "Harpa Concert Hall",
+      "country": "Iceland",
+      "city": "Reykjavik",
+      "category": "activity",
+      "subcategories": [
+        "culture",
+        "nature"
+      ],
+      "description": "Harpa Concert Hall is a popular destination in Reykjavik, Iceland, known for unique Nordic travel experiences.",
+      "budget_level": "low",
+      "family_friendly": true,
+      "environment": "outdoors",
+      "travel_styles": [
+        "family",
+        "solo",
+        "friends"
+      ],
+      "recommended_duration_hours": 4,
+      "best_seasons": [
+        "winter",
+        "summer"
+      ],
+      "tags": [
+        "harpa_concert_hall",
+        "reykjavik",
+        "nordic"
+      ],
+      "priority_score": 3,
+      "source_type": "manual",
+      "embedding_text": "Harpa Concert Hall in Reykjavik Iceland. Nordic travel experience. Category: activity."
+    },
+    {
+      "id": "iceland_reykjavik_sky_lagoon",
+      "name": "Sky Lagoon",
+      "country": "Iceland",
+      "city": "Reykjavik",
+      "category": "activity",
+      "subcategories": [
+        "culture",
+        "nature"
+      ],
+      "description": "Sky Lagoon is a popular destination in Reykjavik, Iceland, known for unique Nordic travel experiences.",
+      "budget_level": "high",
+      "family_friendly": true,
+      "environment": "outdoors",
+      "travel_styles": [
+        "friends",
+        "family",
+        "couple"
+      ],
+      "recommended_duration_hours": 2,
+      "best_seasons": [
+        "summer",
+        "spring"
+      ],
+      "tags": [
+        "sky_lagoon",
+        "reykjavik",
+        "nordic"
+      ],
+      "priority_score": 2,
+      "source_type": "manual",
+      "embedding_text": "Sky Lagoon in Reykjavik Iceland. Nordic travel experience. Category: activity."
+    },
+    {
+      "id": "iceland_reykjavik_blue_lagoon",
+      "name": "Blue Lagoon",
+      "country": "Iceland",
+      "city": "Reykjavik",
+      "category": "attraction",
+      "subcategories": [
+        "culture",
+        "nature"
+      ],
+      "description": "Blue Lagoon is a popular destination in Reykjavik, Iceland, known for unique Nordic travel experiences.",
+      "budget_level": "medium",
+      "family_friendly": false,
+      "environment": "mixed",
+      "travel_styles": [
+        "friends",
+        "couple",
+        "family"
+      ],
+      "recommended_duration_hours": 3,
+      "best_seasons": [
+        "all_year",
+        "summer"
+      ],
+      "tags": [
+        "blue_lagoon",
+        "reykjavik",
+        "nordic"
+      ],
+      "priority_score": 1,
+      "source_type": "manual",
+      "embedding_text": "Blue Lagoon in Reykjavik Iceland. Nordic travel experience. Category: attraction."
+    },
+    {
+      "id": "iceland_south_coast_seljalandsfoss",
+      "name": "Seljalandsfoss",
+      "country": "Iceland",
+      "city": "South Coast",
+      "category": "restaurant",
+      "subcategories": [
+        "food",
+        "casual dining"
+      ],
+      "description": "Seljalandsfoss is a popular destination in South Coast, Iceland, known for unique Nordic travel experiences.",
+      "budget_level": "low",
+      "family_friendly": false,
+      "environment": "indoors",
+      "travel_styles": [
+        "family",
+        "solo",
+        "couple"
+      ],
+      "recommended_duration_hours": 1,
+      "best_seasons": [
+        "winter",
+        "spring"
+      ],
+      "tags": [
+        "seljalandsfoss",
+        "south_coast",
+        "nordic"
+      ],
+      "priority_score": 2,
+      "source_type": "manual",
+      "embedding_text": "Seljalandsfoss in South Coast Iceland. Nordic travel experience. Category: restaurant."
+    },
+    {
+      "id": "iceland_south_coast_skógafoss",
+      "name": "Skógafoss",
+      "country": "Iceland",
+      "city": "South Coast",
+      "category": "activity",
+      "subcategories": [
+        "culture",
+        "nature"
+      ],
+      "description": "Skógafoss is a popular destination in South Coast, Iceland, known for unique Nordic travel experiences.",
+      "budget_level": "medium",
+      "family_friendly": false,
+      "environment": "mixed",
+      "travel_styles": [
+        "friends",
+        "family",
+        "solo"
+      ],
+      "recommended_duration_hours": 1.5,
+      "best_seasons": [
+        "summer",
+        "spring"
+      ],
+      "tags": [
+        "skógafoss",
+        "south_coast",
+        "nordic"
+      ],
+      "priority_score": 1,
+      "source_type": "manual",
+      "embedding_text": "Skógafoss in South Coast Iceland. Nordic travel experience. Category: activity."
+    },
+    {
+      "id": "iceland_south_coast_reynisfjara_beach",
+      "name": "Reynisfjara Beach",
+      "country": "Iceland",
+      "city": "South Coast",
+      "category": "attraction",
+      "subcategories": [
+        "culture",
+        "nature"
+      ],
+      "description": "Reynisfjara Beach is a popular destination in South Coast, Iceland, known for unique Nordic travel experiences.",
+      "budget_level": "medium",
+      "family_friendly": true,
+      "environment": "outdoors",
+      "travel_styles": [
+        "couple",
+        "solo",
+        "family"
+      ],
+      "recommended_duration_hours": 4,
+      "best_seasons": [
+        "all_year",
+        "winter"
+      ],
+      "tags": [
+        "reynisfjara_beach",
+        "south_coast",
+        "nordic"
+      ],
+      "priority_score": 3,
+      "source_type": "manual",
+      "embedding_text": "Reynisfjara Beach in South Coast Iceland. Nordic travel experience. Category: attraction."
+    },
+    {
+      "id": "iceland_golden_circle_thingvellir_national_park",
+      "name": "Thingvellir National Park",
+      "country": "Iceland",
+      "city": "Golden Circle",
+      "category": "attraction",
+      "subcategories": [
+        "culture",
+        "nature"
+      ],
+      "description": "Thingvellir National Park is a popular destination in Golden Circle, Iceland, known for unique Nordic travel experiences.",
+      "budget_level": "high",
+      "family_friendly": false,
+      "environment": "mixed",
+      "travel_styles": [
+        "solo",
+        "couple",
+        "family"
+      ],
+      "recommended_duration_hours": 4,
+      "best_seasons": [
+        "all_year",
+        "winter"
+      ],
+      "tags": [
+        "thingvellir_national_park",
+        "golden_circle",
+        "nordic"
+      ],
+      "priority_score": 3,
+      "source_type": "manual",
+      "embedding_text": "Thingvellir National Park in Golden Circle Iceland. Nordic travel experience. Category: attraction."
+    },
+    {
+      "id": "iceland_golden_circle_geysir",
+      "name": "Geysir",
+      "country": "Iceland",
+      "city": "Golden Circle",
+      "category": "restaurant",
+      "subcategories": [
+        "food",
+        "casual dining"
+      ],
+      "description": "Geysir is a popular destination in Golden Circle, Iceland, known for unique Nordic travel experiences.",
+      "budget_level": "high",
+      "family_friendly": true,
+      "environment": "outdoors",
+      "travel_styles": [
+        "couple",
+        "family",
+        "friends"
+      ],
+      "recommended_duration_hours": 4,
+      "best_seasons": [
+        "summer",
+        "spring"
+      ],
+      "tags": [
+        "geysir",
+        "golden_circle",
+        "nordic"
+      ],
+      "priority_score": 2,
+      "source_type": "manual",
+      "embedding_text": "Geysir in Golden Circle Iceland. Nordic travel experience. Category: restaurant."
+    },
+    {
+      "id": "iceland_golden_circle_gullfoss",
+      "name": "Gullfoss",
+      "country": "Iceland",
+      "city": "Golden Circle",
+      "category": "activity",
+      "subcategories": [
+        "culture",
+        "nature"
+      ],
+      "description": "Gullfoss is a popular destination in Golden Circle, Iceland, known for unique Nordic travel experiences.",
+      "budget_level": "medium",
+      "family_friendly": true,
+      "environment": "indoors",
+      "travel_styles": [
+        "family",
+        "couple",
+        "friends"
+      ],
+      "recommended_duration_hours": 3,
+      "best_seasons": [
+        "spring",
+        "autumn"
+      ],
+      "tags": [
+        "gullfoss",
+        "golden_circle",
+        "nordic"
+      ],
+      "priority_score": 2,
+      "source_type": "manual",
+      "embedding_text": "Gullfoss in Golden Circle Iceland. Nordic travel experience. Category: activity."
+    }
+  ]
+}
