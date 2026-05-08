@@ -52,7 +52,7 @@ async def _category_places(
             category=category,
             city=request.city,
         )
-    return _merge_unique(seed_places, live_places=live_places)[:5]
+    return _merge_unique(seed_places, live_places=live_places)[:3]
 
 
 async def build_recommendations(

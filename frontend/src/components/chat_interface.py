@@ -41,7 +41,7 @@ def render_chat_interface():
                     "budget": budget.lower() if budget else None,
                     "use_google_maps": False
                 },
-                timeout=60
+                timeout=300
             )
 
             if response.status_code != 200:

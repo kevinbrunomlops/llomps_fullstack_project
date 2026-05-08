@@ -14,6 +14,7 @@ class ChatRequest(BaseModel):
     indoors: bool | None = None
     use_google_maps: bool = False
     prompt_version: str | None = None
+    country: str | None = None
 
 class ChatResponse(BaseModel):
     answer: str
