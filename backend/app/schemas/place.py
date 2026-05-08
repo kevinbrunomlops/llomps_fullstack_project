@@ -12,6 +12,8 @@ class Place(BaseModel):
     category: str
     subcategories: list[str] = Field(default_factory=list)
     description: str | None = None
+    city_sv: str | None = None
+    country_sv: str | None = None
     
     # Manual dataset field
     budget_level: str | None = None
@@ -24,6 +26,8 @@ class Place(BaseModel):
     tags: list[str] = Field(default_factory=list)
     priority_score: int | None = None
     source_type: str = "manual"
+    embedding_text: str | None = None
+    aliases: list[str] = Field(default_factory=list)
 
     # Optional live-data/enrichment field
     address: str | None = None

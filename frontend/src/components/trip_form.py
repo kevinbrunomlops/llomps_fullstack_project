@@ -15,7 +15,7 @@ def render_trip_form():
         COUNTRIES_AND_CITIES[country]
     )
 
-    city = CITY_MAPPING[city_label]
+    city = CITY_MAPPING.get(city_label, city_label)
 
     days = st.slider(
         "Hur många dagar planerar du att resa?",

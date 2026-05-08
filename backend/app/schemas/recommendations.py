@@ -12,6 +12,7 @@ class RecommendationRequest(BaseModel):
     environment: str | None = None #indoors, outdoors, mixed
     indoors: bool | None = None # kept for backward compatibility
     use_google_maps: bool = False
+    country: str | None = None
 
 class RecommendationResponse(BaseModel):
     city: str

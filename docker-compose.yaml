@@ -10,11 +10,10 @@ services:
     env_file:
       - .env
     environment:
-    - MLFLOW_MONITORING_PATH=/app/monitoring
+      - MLFLOW_MONITORING_PATH=/app/monitoring
     volumes:
       - ./backend/data:/app/backend/data
-      - ./monitoring:/app/monitoring
-     
+      - ./monitoring:/app/monitoring 
     command: >
       uv run uvicorn backend.app.main:app
       --host 0.0.0.0

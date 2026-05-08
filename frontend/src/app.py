@@ -2,6 +2,7 @@ import streamlit as st
 
 from frontend.src.components.trip_form import render_trip_form
 from frontend.src.components.chat_interface import render_chat_interface
+from backend.app.utils.localization import to_swedish_city, to_swedish_budget
 import requests
 
 import os
@@ -10,13 +11,13 @@ BACKEND_URL = os.getenv("BACKEND_URL", "http://127.0.0.1:8000")
 API_URL = f"{BACKEND_URL}/chat"
 
 st.set_page_config(
-    page_title="Scandinavia Travel Chatbot",
+    page_title="Nordic Travel Chatbot",
     page_icon="🧭",
     layout="wide"
 )
 
-st.title("🧭 Scandinavia Travel Chatbot")
-st.write("Planera din resa genom Sverige, Norge och Danmark med en enkel reseguide.")
+st.title("🧭 Nordic Travel Chatbot")
+st.write("Planera din resa genom Norden med en enkel svensk reseguide.")
 
 if "chat_started" not in st.session_state:
     st.session_state.chat_started = False
@@ -45,7 +46,7 @@ if not st.session_state.chat_started:
                     "budget": budget.lower() if budget else None,
                     "use_google_maps": False
                 },
-                timeout=60
+                timeout=300
             )
 
             if api_response.status_code != 200:
@@ -67,12 +68,15 @@ else:
     col1, col2 = st.columns([1, 3])
 
     with col1:
+        swedish_city = to_swedish_city(st.session_state.city)
+        swedish_budget = to_swedish_budget(st.session_state.budget)
+
         st.info(
             f"**Reseuppgifter**\n\n"
             f"Land: {st.session_state.country}\n\n"
-            f"Stad: {st.session_state.city}\n\n"
+            f"Stad: {swedish_city}\n\n"
             f"Dagar: {st.session_state.days}\n\n"
-            f"Budget: {st.session_state.budget}"
+            f"Budget: {swedish_budget}"
         )
 
         if st.button("Börja om"):

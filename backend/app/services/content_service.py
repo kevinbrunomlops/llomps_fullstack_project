@@ -13,7 +13,7 @@ from backend.app.core.config import get_settings
 from backend.app.schemas.place import Place
 
 
-DATASET_FILENAME = "scandinavia_data.json"
+DATASET_FILENAME = "nordic_travel_dataset_complete.json"
 
 
 @lru_cache
@@ -36,19 +36,22 @@ def load_places() -> list[Place]:
     dataset = load_dataset()
     places: list[Place] = []
 
-    for city_block in dataset.get("cities",[]):
+    if "places_flat" in dataset:
+        return [Place(**raw_place) for raw_place in dataset["places_flat"]]
+
+    for city_block in dataset.get("cities", []):
         city = city_block.get("city")
         country = city_block.get("country")
 
-        for raw_place in city_block.get("places",[]):
+        for raw_place in city_block.get("places", []):
             places.append(
                 Place(
                     **raw_place,
                     city=city,
-                    country=country
+                    country=country,
                 )
             )
-    
+
     return places
     
     
@@ -71,16 +74,21 @@ def _normalize(value:str | None) -> str:
 def _matches_interests(place: Place, interests: list[str] | None) -> bool:
     if not interests:
         return True
-    
+
     searchable_values = [
         place.name,
+        place.city,
+        place.country or "",
         place.category,
         place.description or "",
         place.area or "",
+        place.embedding_text or "",
         *(place.subcategories or []),
         *(place.tags or []),
         *(place.travel_styles or []),
-    ]     
+        *(place.best_seasons or []),
+    ]
+
     searchable_text = " ".join(searchable_values).lower()
 
     return any(_normalize(interest) in searchable_text for interest in interests)
@@ -245,13 +253,10 @@ def format_places_for_prompt(places: list[Place]) -> str:
     for place in places:
         rows.append(
             "- "
-            f"{place.name} | city={place.city} | country={place.country or 'unknown'} |"            
-            f"category{place.category} | subcategories={', '.join(place.subcategories) or 'n/a'} | "
-            f"budget{place.budget_level or place.price_level or 'unknow'} | "
-            f"family_friendly{place.family_friendly} | environment={place.environment or 'unknow'}| "
-            f"area{place.area or place.address or 'unknown'} | "
-            f"duration_hours={place.recommended_duration_hours or 'n/a'}  | "
-            f"tags{', '.join(place.tags) or 'n/a'} | "
-            f"source={place.source_type} | description={place.description or 'n/a'}"
+            f"{place.name} | "
+            f"city={place.city} | "
+            f"category={place.category} | "
+            f"budget={place.budget_level or 'unknown'} | "
+            f"description={place.description or 'n/a'}"
         )
     return "\n".join(rows)
