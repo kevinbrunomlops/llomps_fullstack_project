@@ -61,6 +61,8 @@ Backend API (FastAPI + Pydantic-AI)
 MLflow Tracking Server
         ↓
 PostgreSQL Backend Store
+        ↓
+Azure Deployment       
 ```
 
 ## Features
@@ -86,8 +88,8 @@ This current project supports:
 - Stockholm
 - Oslo
 - Copenhagen
-- Helsiniki
-- Rejkavik
+- Helsinki
+- Reykjavik
 
 The dataset kan easily be expanded with more Scandinavians cities. 
 
@@ -183,7 +185,7 @@ uv run mlflow ui --backend-store-uri sqlite:///monitoring/mlflow.db --port 5001
 ```
 ### Start backend
 ```
-uv run uvircorn backend.app.main:app --reload --host 0.0.0.0 --port 8000
+uv run uvicorn backend.app.main:app --reload --host 0.0.0.0 --port 8000
 ```
 ### Start frontend
 ```
@@ -208,9 +210,7 @@ POST /recommendation
 Example request:
 ```
 {
-    "message": "I am visiting Stockholm for 2 days with family"
-    "message" : "Give me a recommended restaurant with low budget"
-
+    "message": "I am visiting Stockholm for 2 days with family"    
 }
 ```
 
@@ -222,7 +222,7 @@ The project uses MLflow for:
 - logging chatbot request and responses
 
 ### Prompt registration
-Prompts are registred through:
+Prompts are registered through:
 ```
 uv run python -m monitoring.register_prompts
 ```
@@ -324,11 +324,11 @@ Developed as part of an LLMOps "university" project
 
 Team members contributed across:
 - backend engineering
-- frontend develeopment
+- frontend development
 - cloud deployment
 - MLflow monitoring
 - prompt engineering
-- evalutation workflows 
+- evaluation workflows 
 - Docker infrastructure
 
 ## License
