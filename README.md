@@ -270,9 +270,9 @@ The project evaluates:
 Example evaluation prompts:
 
 - "2 days in Stockholm with low budget"
-- ("Family-friendly activties in Copenhagen")
-- ("Rainy day in Oslo")
-- ("Romantic weekend in Bergen")
+- "Family-friendly activties in Copenhagen"
+- "Rainy day in Oslo"
+- "Romantic weekend in Bergen"
 
 ## Team Workflow
 
