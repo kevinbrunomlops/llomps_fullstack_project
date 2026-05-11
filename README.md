@@ -258,6 +258,17 @@ docker build -f dockerfiles/backend.dockerfile -t backend:v1 .
 docker build -f dockerfiles/frontend.docerkfile -t frontend:v1 .
 ```
 
+### Google Maps Integration
+
+The chatbot "can" use the Google Maps API but we didnt chose it in our scenario case to:
+- search places
+- retrieve restaurant information 
+- retrieve attractions
+- enrich recommendations
+
+
+
+
 ### Evaluation Strategy
 
 The project evaluates:
