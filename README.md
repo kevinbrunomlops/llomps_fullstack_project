@@ -140,8 +140,6 @@ Create a `.env` file in the project root.
 ### Required Variables
 ```
 OPENROUTER_API_KEY=your_openrouter_key
-MLFLOW_TRACKING_URI=http://localhost:5000
-MLFLOW_EXPERIMENT_NAME=travel_chatbot_scandinavia
 ```
 
 ## Local Development
@@ -202,11 +200,17 @@ GET /health
 ```
 POST /chat 
 ```
+### Recommendation endpoint
+```
+POST /recommendation 
+```
 
 Example request:
 ```
 {
     "message": "I am visiting Stockholm for 2 days with family"
+    "message" : "Give me a recommended restaurant with low budget"
+
 }
 ```
 
@@ -251,12 +255,16 @@ The application is deployed using:
 ## Docker Images
 ### Backend
 ```
-docker build -f dockerfiles/backend.dockerfile -t backend:v1 .
+docker buildx build --platform linux/amd64 --provenance=false -f dockerfiles/backend.dockerfile -t <AZURE_URL>/backend:v1 --push .
+
 ```
 ### Frontend 
 ```
-docker build -f dockerfiles/frontend.docerkfile -t frontend:v1 .
+docker buildx build --platform linux/amd64 --provenance=false -f dockerfiles/frontend.dockerfile -t <AZURE_URL>/frontend:v1 --push .
 ```
+### MLflow
+
+docker buildx build --platform linux/amd64 --provenance=false -f dockerfiles/mlflow.dockerfile -t <AZURE_URL>/mlflow:v1 --push .
 
 ### Google Maps Integration
 
