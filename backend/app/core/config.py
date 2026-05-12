@@ -9,6 +9,11 @@ class Settings(BaseSettings):
     openrouter_base_url: str = Field(default="https://openrouter.ai/api/v1", alias="OPENROUTER_BASE_URL")
     google_maps_api_key: str = Field(default="", alias="GOOGLE_MAPS_API_KEY")
     
+    model_small: str = Field(default="openrouter:liquid/lfm-2.5-1.2b-instruct:free", alias="MODEL_SMALL")
+    model_medium: str = Field(default="openrouter:openai/gpt-oss-120b:free", alias="MODEL_MEDIUM")
+    model_large: str = Field(default="openrouter:nvidia/nemotron-3-super-120b-a12b:free", alias="MODEL_LARGE")
+    llm_judge: str = Field(default="openrouter:/openai/gpt-oss-20b:free", alias="LLM_JUDGE")
+
     mlflow_experiment_name: str = Field(default="travel_chatbot_scandinavia", alias="MLFLOW_EXPERIMENT_NAME")
     mlflow_tracking_db_filename: str = Field(default="mlflow.db", alias="MLFLOW_TRACKING_DB_FILENAME")
     mlflow_monitoring_path: str | None = Field(default=None, alias="MLFLOW_MONITORING_PATH")

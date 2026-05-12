@@ -25,7 +25,7 @@ from backend.app.utils.localization import to_swedish_city, to_swedish_budget
 load_dotenv()
 
 travel_agent = Agent(
-    model=MODEL_LARGE,
+    model=MODEL_MEDIUM,
     system_prompt=load_prompt("travel_chatbot_system_prompt").template
 )
 
@@ -127,7 +127,9 @@ Instruktioner:
         prompt_name="travel_chatbot_system_prompt",
         prompt_version=request.prompt_version,
     )
+    print("Before travel_agent.run", flush=True)
     result = await travel_agent.run(prompt)
+    print("After travel_agent.run", flush=True)
 
     all_places = [
         *recommendations.attractions,
