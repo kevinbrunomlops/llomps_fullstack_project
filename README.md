@@ -263,8 +263,9 @@ docker buildx build --platform linux/amd64 --provenance=false -f dockerfiles/bac
 docker buildx build --platform linux/amd64 --provenance=false -f dockerfiles/frontend.dockerfile -t <AZURE_URL>/frontend:v1 --push .
 ```
 ### MLflow
-
+```
 docker buildx build --platform linux/amd64 --provenance=false -f dockerfiles/mlflow.dockerfile -t <AZURE_URL>/mlflow:v1 --push .
+```
 
 ### Google Maps Integration
 
@@ -307,7 +308,7 @@ Example evaluation prompts:
 - Issues
 - Working agreement
 
-## Future Improvements
+## Future Improvements  
 
 Potential future improvements include:
 - vector database retrieval
@@ -334,4 +335,24 @@ Team members contributed across:
 ## License
 Educational project
 
+## Backend (GUI)
 
+<img src="README_images/FastAPI.png" width="50%">
+
+
+## Frontend (GUI)
+
+<img src="README_images/Streamlit1.png" width="50%">
+
+<img src="README_images/Streamlit2.png" width="50%">
+
+<img src="README_images/Streamlit3.png" width="50%">
+
+## MLflow (GUI)
+
+<img src="README_images/MLflow.png" width="50%">
+
+## Azure (GUI)
+
+
+<img src="README_images/Azure.png" width="50%">
