@@ -5,6 +5,7 @@ FROM python:3.12-slim
   COPY pyproject.toml uv.lock ./
   
   COPY frontend ./frontend
+  COPY backend ./backend
 
   RUN pip install uv  
   RUN uv sync --frozen

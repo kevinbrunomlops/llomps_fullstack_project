@@ -10,6 +10,7 @@ dependencies = [
     "litellm>=1.83.0",
     "mlflow>=3.11.1",
     "pandas>=2.3.3",
+    "psycopg2-binary>=2.9.12",
     "pydantic>=2.13.3",
     "pydantic-ai>=1.86.0",
     "streamlit>=1.56.0",

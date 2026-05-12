@@ -12,6 +12,7 @@ class Settings(BaseSettings):
     mlflow_experiment_name: str = Field(default="travel_chatbot_scandinavia", alias="MLFLOW_EXPERIMENT_NAME")
     mlflow_tracking_db_filename: str = Field(default="mlflow.db", alias="MLFLOW_TRACKING_DB_FILENAME")
     mlflow_monitoring_path: str | None = Field(default=None, alias="MLFLOW_MONITORING_PATH")
+    mlflow_tracking_uri: str | None = Field(default=None, alias="MLFLOW_TRACKING_URI")
 
     prompt_name_system: str = Field(default="travel_chatbot_system_prompt", alias="PROMPT_NAME_SYSTEM")
     prompt_name_tool_dataset: str = Field(default="travel_dataset_lookup_description", alias="PROMPT_NAME_TOOL_DATASET")
@@ -50,8 +51,14 @@ class Settings(BaseSettings):
     def data_path(self) -> Path:
         return self.backend_root / "data"
     
+    # @property
+    # def tracking_uri(self) -> str:
+    #     return f"sqlite:///{self.monitoring_path / self.mlflow_tracking_db_filename}"
+
     @property
     def tracking_uri(self) -> str:
+        if self.mlflow_tracking_uri:
+            return self.mlflow_tracking_uri
         return f"sqlite:///{self.monitoring_path / self.mlflow_tracking_db_filename}"
     
 @lru_cache
