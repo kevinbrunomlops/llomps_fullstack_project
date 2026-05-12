@@ -11,7 +11,7 @@ services:
     environment:
       - MLFLOW_MONITORING_PATH=/app/monitoring
     volumes:
-      - ./backend/data:/app/backend/data
+      - ./backend:/app/backend
       - ./monitoring:/app/monitoring 
     command: >
       uv run uvicorn backend.app.main:app

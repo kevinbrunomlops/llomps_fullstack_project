@@ -4,17 +4,18 @@ import mlflow
 
 from backend.app.core.config import get_settings
 
-MODEL_SMALL = "openrouter:liquid/lfm-2.5-1.2b-instruct:free"
-MODEL_MEDIUM = "openrouter:nvidia/nemotron-3-nano-30b-a3b:free"
-MODEL_LARGE = "openrouter:nvidia/nemotron-3-super-120b-a12b:free"
-
-LLM_JUDGE = "openrouter:nvidia/nemotron-3-nano-30b-a3b:free"
-
 settings = get_settings()
+
+MODEL_SMALL = settings.model_small
+MODEL_MEDIUM = settings.model_medium
+MODEL_LARGE = settings.model_large
+LLM_JUDGE = settings.llm_judge
+
 MONITORING_PATH = settings.monitoring_path
 
 Path(MONITORING_PATH).mkdir(parents=True, exist_ok=True)
 
 mlflow.set_tracking_uri(settings.tracking_uri)
 mlflow.set_experiment(settings.mlflow_experiment_name)
-mlflow.pydantic_ai.autolog()
+if settings.app_env != "evaluation":
+    mlflow.pydantic_ai.autolog()
